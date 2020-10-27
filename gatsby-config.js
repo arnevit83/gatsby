@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Your Yoga Site',
-    description:
-      'Yoga site description.',
+    description: 'Yoga site description.',
   },
-  plugins: [
+  plugins: [{
+      resolve: `gatsby-plugin-manifest`,
+    },
+    'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
@@ -34,8 +36,7 @@ module.exports = {
     {
       resolve: 'gatsby-transformer-remark',
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: 'gatsby-remark-relative-images',
             options: {
               name: 'uploads',
