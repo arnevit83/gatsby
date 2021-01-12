@@ -1,7 +1,7 @@
 ---
-templateKey: "Schedule-page"
-path: /Schedule
-title: Schedule
+templateKey: "schedule-page"
+path: /schedule
+title: schedule
 ---
 
 ### Schedule
