@@ -3,7 +3,10 @@ module.exports = {
     title: 'Your Yoga Site',
     description: 'Yoga site description.',
   },
-  plugins: [{
+  plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
       resolve: `gatsby-plugin-manifest`,
     },
     'gatsby-plugin-offline',
@@ -27,12 +30,17 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/settings`,
+        name: 'settings',
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

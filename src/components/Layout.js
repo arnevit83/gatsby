@@ -4,10 +4,12 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
+import GetSiteSettings from './SiteSettings'
 import { withPrefix } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+  const { title, description } = useSiteMetadata();
+  const { twitter, location} = GetSiteSettings();
   return (
     <div>
       <Helmet>
@@ -54,7 +56,7 @@ const TemplateWrapper = ({ children }) => {
         <meta itemprop="name" content={title}/>
         <meta itemprop="description" content={description} />
         <meta itemprop="image"   content={`${withPrefix('/')}img/og-image.jpg`} />
-         {/* Twitter  */}
+        {/* Twitter  */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description"  content={description} />
