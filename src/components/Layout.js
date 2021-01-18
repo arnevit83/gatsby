@@ -47,6 +47,18 @@ const TemplateWrapper = ({ children }) => {
           property="og:image"
           content={`${withPrefix('/')}img/og-image.jpg`}
         />
+        <meta name="robots" content="index,follow,all" />
+        <meta name="revisit-after" content="10 days" />
+        <meta name="designer" content="https://sparklingpeach.co.uk" />
+        {/* schema.org for Google */}
+        <meta itemprop="name" content={title}/>
+        <meta itemprop="description" content={description} />
+        <meta itemprop="image"   content={`${withPrefix('/')}img/og-image.jpg`} />
+         {/* Twitter  */}
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description"  content={description} />
+        <meta name="twitter:site" content={twitter}  />
       </Helmet>
       <Navbar />
       <div>{children}</div>
