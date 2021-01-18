@@ -1,4 +1,4 @@
 ---
 twitter: "@yogadropout"
-location: '{"type":"Point","coordinates":[0,52.9442257]}'
+location: '{"type":"Point","coordinates":[1.3037109,52.6347298]}'
 ---
