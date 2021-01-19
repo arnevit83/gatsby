@@ -7,6 +7,16 @@ import useSiteMetadata from './SiteMetadata'
 import GetSiteSettings from './SiteSettings'
 import { withPrefix } from 'gatsby'
 
+import "../assets/css/nucleo-svg.css";
+import "../assets/css/nucleo-icons.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "../assets/scss/argon-design-system.scss?v1.0.0";
+
+
+// reactstrap components
+import { Container, Row, Button } from "reactstrap";
+
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   const { twitter, location} = GetSiteSettings();
@@ -63,6 +73,18 @@ const TemplateWrapper = ({ children }) => {
         <meta name="twitter:site" content={twitter}  />
       </Helmet>
       <Navbar />
+       <Button
+          className="btn-icon-only back-to-top show"
+          color="primary"
+          name="button"
+          type="button"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+          }}
+        >
+          <i className="ni ni-bold-up"></i>
+        </Button> 
       <div>{children}</div>
       <Footer />
     </div>
