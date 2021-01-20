@@ -1,3 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Meakeel/gatsby-starter-netlify-cms
   branch: master
+  site_domain: cms.netlify.com
