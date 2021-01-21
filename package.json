@@ -31,7 +31,16 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
-    "uuid": "^7.0.0"
+    "uuid": "^7.0.0",
+    "@fortawesome/fontawesome-free": "5.14.0",
+    "@glidejs/glide": "3.4.1",
+    "choices.js": "9.0.1",
+    "headroom.js": "0.11.0",
+    "moment": "2.27.0",
+    "nouislider": "14.6.0",
+    "reactstrap": "8.5.1",
+    "react-google-maps": "9.4.5"
+
   },
   "keywords": [
     "gatsby"
@@ -48,5 +57,10 @@
   },
   "devDependencies": {
     "prettier": "^2.0.5"
+  },
+  "optionalDependencies": {
+    "typescript": "3.9.7",
+    "@types/googlemaps": "3.39.11",
+    "@types/markerclustererplus": "2.1.33"
   }
 }
