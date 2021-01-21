@@ -272,17 +272,17 @@ collections:
                 ],
             }
 
-  - label: "Setting"
-    name: "setting"
+  - name: "setting"
+    label: "Setting"
     files:
-      - label: "SEO settings"
+      - file: "src/settings/seo.md"
+        label: "SEO settings"
         name: "seo"
-        file: "src/settings/seo.md"
         editor:
           preview: false
         fields:
-            - {
-              label: "Facebook Page ID,
+          - {
+              label: "Facebook Page ID",
               name: "fbpageid",
               widget: "string"
             }
