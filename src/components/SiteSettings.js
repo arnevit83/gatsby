@@ -7,6 +7,7 @@ const GetSiteSettings = () => {
       markdownRemark(frontmatter: {templateKey: {eq: "sitesettings"}}) {
         id
         frontmatter {
+          fbpageid
           twitter
           location
         }

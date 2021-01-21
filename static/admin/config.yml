@@ -281,6 +281,11 @@ collections:
         editor:
           preview: false
         fields:
+            - {
+              label: "Facebook Page ID,
+              name: "fbpageid",
+              widget: "string"
+            }
           - {
               label: "Twitter Handle",
               name: "twitter",

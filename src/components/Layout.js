@@ -7,6 +7,7 @@ import useSiteMetadata from './SiteMetadata'
 import GetSiteSettings from './SiteSettings'
 import { withPrefix } from 'gatsby'
 
+//Argon Theme
 import "../assets/css/nucleo-svg.css";
 import "../assets/css/nucleo-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -19,7 +20,7 @@ import { Container, Row, Button } from "reactstrap";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const { twitter, location} = GetSiteSettings();
+  const { fbpageid, twitter, location} = GetSiteSettings();
   return (
     <div>
       <Helmet>
@@ -71,6 +72,16 @@ const TemplateWrapper = ({ children }) => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description"  content={description} />
         <meta name="twitter:site" content={twitter}  />
+        {/* Open Graph general (Facebook, Pinterest & Google+) */}
+        <meta name="og:title" content={title}/>
+        <meta name="og:description" content={description} />
+        <meta name="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
+        <meta name="og:locale" content="en_GB" />
+        <meta name="og:type" content="website" />
+        <meta property="fb:page_id" content={fbpageid} /> 
+
+
+
       </Helmet>
       <Navbar />
        <Button
