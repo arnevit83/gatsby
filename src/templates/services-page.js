@@ -3,10 +3,14 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import { Badge, Container, Row, Col } from "reactstrap";
+import LeftAlign from '../components/custom-widgets/LeftAlign'
+import CustomWidget from '../components/custom-widgets/CustomWidget'
 
 export const ServicesPageTemplate = ({
   title,
-  description }) => (
+  description,
+  blurbs }) => (
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
@@ -17,6 +21,13 @@ export const ServicesPageTemplate = ({
               </h2>
               
               <p>{description}</p>
+
+              <div className="section features-1">
+
+              {blurbs.map((blurb) => (
+                <CustomWidget key={blurb.text} {...blurb}></CustomWidget>
+              ))}
+              </div>
             </div>
           </div>
         </div>
@@ -28,6 +39,13 @@ ServicesPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   description: PropTypes.string,
+  blurbs: PropTypes.arrayOf(
+    PropTypes.shape({
+      text: PropTypes.string,
+      align: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    })
+  )
 }
 
 const ServicesPage = ({ data }) => {
@@ -38,6 +56,7 @@ const ServicesPage = ({ data }) => {
       <ServicesPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
+        blurbs={frontmatter.blurbs}
       />
     </Layout>
   )
@@ -60,6 +79,17 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        blurbs {
+          align
+          text
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
       }
     }
   }
