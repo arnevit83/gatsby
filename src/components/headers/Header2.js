@@ -113,7 +113,7 @@ function Header2() {
           <div
             className="page-header-image"
             style={{
-              backgroundImage: "url(" + require("assets/img/ill/p8.svg") + ")",
+              backgroundImage: "url(" + require("../../assets/img/ill/p8.svg") + ")",
             }}
           ></div>
           <Container className="pt-300">

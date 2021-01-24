@@ -1,8 +1,8 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+
 import './all.sass'
+
 import useSiteMetadata from './SiteMetadata'
 import GetSiteSettings from './SiteSettings'
 import { withPrefix } from 'gatsby'
@@ -14,20 +14,27 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../assets/scss/argon-design-system.scss?v1.0.0";
 
 
-// reactstrap components
-import { Container, Row, Button } from "reactstrap";
+
+// Core Components
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const { fbpageid, twitter, location} = GetSiteSettings();
+  const { fbpageid, twitter, location} = GetSiteSettings()
+
+ 
   return (
-    <div>
-      <Helmet>
+
+    <>
+    <Helmet>
+
+
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -79,27 +86,22 @@ const TemplateWrapper = ({ children }) => {
         <meta name="og:locale" content="en_GB" />
         <meta name="og:type" content="website" />
         <meta property="fb:page_id" content={fbpageid} /> 
+        <meta name="geo.position" content={location.substring( 0, location.indexOf( "]}" ) ).substring(31)} />
+      </Helmet>    
 
+      <Header type="transparent" />
+        <div className="wrapper">
+         {children}
+        <Footer />
+      </div>
+   
 
-
-      </Helmet>
-      <Navbar />
-       <Button
-          className="btn-icon-only back-to-top show"
-          color="primary"
-          name="button"
-          type="button"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-          }}
-        >
-          <i className="ni ni-bold-up"></i>
-        </Button> 
-      <div>{children}</div>
-      <Footer />
-    </div>
-  )
+    </>
+  );
 }
 
 export default TemplateWrapper
+
+
+
+

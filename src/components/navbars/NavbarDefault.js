@@ -41,7 +41,7 @@ function NavbarDefault() {
                   <Link to="/index">
                     <img
                       alt="..."
-                      src={require("assets/img/brand/blue.png")}
+                      src={require("../assets/img/brand/blue.png")}
                     ></img>
                   </Link>
                 </Col>

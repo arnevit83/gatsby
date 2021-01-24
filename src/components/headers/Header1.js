@@ -49,12 +49,8 @@ function Header1() {
               <div className="navbar-collapse-header">
                 <Row>
                   <Col className="collapse-brand" xs="6">
-                    <Link to="/index">
-                      <img
-                        alt="..."
-                        src={require("assets/img/brand/blue.png")}
-                      ></img>
-                    </Link>
+             
+             
                   </Col>
                   <Col className="collapse-close" xs="6">
                     <button
@@ -135,7 +131,7 @@ function Header1() {
           <div
             className="page-header-image"
             style={{
-              backgroundImage: "url(" + require("assets/img/ill/p2.svg") + ")",
+              backgroundImage: "url(" + require("../../assets/img/ill/p2.svg") + ")",
             }}
           ></div>
           <Container>

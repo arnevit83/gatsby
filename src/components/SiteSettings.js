@@ -8,7 +8,6 @@ const GetSiteSettings = () => {
         id
         frontmatter {
           fbpageid
-          twitter
           location
         }
       }
@@ -18,5 +17,7 @@ const GetSiteSettings = () => {
 
   return markdownRemark.frontmatter
 }
+
+
 
 export default GetSiteSettings

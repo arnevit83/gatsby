@@ -7,32 +7,71 @@ import { Badge, Container, Row, Col } from "reactstrap";
 import LeftAlign from '../components/custom-widgets/LeftAlign'
 import CustomWidget from '../components/custom-widgets/CustomWidget'
 
+import {
+
+
+  Card,
+  CardBody
+} from "reactstrap";
+
 export const ServicesPageTemplate = ({
   title,
   description,
   blurbs }) => (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              
-              <p>{description}</p>
 
-              <div className="section features-1">
-
-              {blurbs.map((blurb) => (
-                <CustomWidget key={blurb.text} {...blurb}></CustomWidget>
-              ))}
-              </div>
-            </div>
-          </div>
+    <>
+      <div className="section-shaped my-0 skew-separator skew-mini">
+        <div className="page-header page-header-small header-filter">
         </div>
       </div>
-    </section>
+      <section className="upper">
+              <Container>
+                <Row>
+                  <Col className="mx-auto" md="10">
+                    <Card className="card-invoice">
+                      <CardBody>
+                        <Row>
+                          <Col xs="12">
+                  
+
+
+                                                          <section className="section section--gradient">
+                                                            <div className="container">
+                                                              <div className="columns">
+                                                                <div className="column is-10 is-offset-1">
+                                                                  <div className="section">
+                                                                    <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                                                                      {title}
+                                                                    </h2>
+                                                                    
+                                                                    <p>{description}</p>
+
+                                                                    <div className="section features-1">
+
+                                                                    {blurbs.map((blurb) => (
+                                                                      <CustomWidget key={blurb.text} {...blurb}></CustomWidget>
+                                                                    ))}
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </section>
+
+
+
+                                                          </Col>
+                        </Row>
+                      </CardBody>
+                    </Card>
+                  </Col>
+              
+                </Row>
+              </Container>
+            </section>
+          
+    </>
+
   )
 
 ServicesPageTemplate.propTypes = {

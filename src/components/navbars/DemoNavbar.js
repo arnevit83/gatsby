@@ -69,7 +69,7 @@ function DemoNavbar(props) {
             toggler="#navbar_global"
             isOpen={collapseOpen}
           >
-            <div className="navbar-collapse-header">
+            <div className="navbar-\collapse-header">
               <Row>
                 <Col className="collapse-brand" xs="6">
                   <Link to="/index">
