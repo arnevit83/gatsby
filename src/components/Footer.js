@@ -112,6 +112,18 @@ function Footer() {
             </Col>
           </Row>
         </Container>
+        <Button
+          className="btn-icon-only back-to-top show"
+          color="primary"
+          name="button"
+          type="button"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+          }}
+        >
+          <i className="ni ni-bold-up"></i>
+        </Button>
       </footer>
     </>
   );

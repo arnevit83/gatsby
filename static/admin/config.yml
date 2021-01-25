@@ -281,10 +281,19 @@ collections:
         editor:
           preview: false
         fields:
+          - { label: "Facebook Page ID", name: "fbpageid", widget: "string" }
+          - { label: "Location", name: "location", widget: "map" }
+      - file: "src/settings/footer.md"
+        label: "Footer Settings"
+        name: "footer"
+        editor:
+          preview: false
+        fields:
+          - { label: "Footer Title", name: "footertitle", widget: "string" }
           - {
-              label: "Facebook Page ID",
-              name: "fbpageid",
-              widget: "string"
+              label: "Footer Description",
+              name: "footerdesc",
+              widget: "string",
             }
           - {
               label: "Twitter Handle",
@@ -296,4 +305,5 @@ collections:
                   "Must have at least 4 characters and start with a '@'",
                 ],
             }
-          - { label: "Location", name: "location", widget: "map" }
+          - { label: "Facebook Page", name: "facebook", widget: "string" }
+          - { label: "Instagram Profile Name", name: "ig", widget: "string" }
