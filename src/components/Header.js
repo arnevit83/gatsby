@@ -43,16 +43,16 @@ function Header(props) {
   });
   let navbarType = "";
   switch (props.type) {
-    case "dark":
+    case "Dark":
       navbarType = "bg-default navbar-dark";
       break;
-    case "transparent":
-      navbarType = "navbar-transparent";
+    case "Transparent":
+      navbarType = "navbar-transparent navbar-dark";
       break;
-    case "primary":
+    case "Primary":
       navbarType = "bg-primary navbar-dark";
       break;
-    case "white":
+    case "White":
       navbarType = "bg-white";
       break;
     default:
@@ -183,7 +183,7 @@ Header.defaultProps = {
 };
 
 Header.propTypes = {
-  type: PropTypes.oneOf(["dark", "transparent", "primary", "white"]),
+  type: PropTypes.oneOf(["Dark", "Transparent", "Primary", "White"]),
 };
 
 export default Header;

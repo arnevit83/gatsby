@@ -7,6 +7,15 @@ const GetSiteSettings = () => {
       markdownRemark(frontmatter: {templateKey: {eq: "sitesettings"}}) {
         id
         frontmatter {
+          headercolor
+          headerbackgroundimage {
+            childImageSharp {
+              fluid(maxWidth: 2000, quality: 95) {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+          menutype
           fbpageid
           location
         }

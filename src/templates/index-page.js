@@ -27,33 +27,7 @@ export const IndexPageTemplate = ({
 
 
 <>
-      <div className="section-shaped my-0 skew-separator skew-mini">
-                <div className="page-header page-header-small header-filter">
-                  <div
-                    className="page-header-image"
-                    style={{
-                      backgroundImage: `url(${
-                        !!image.childImageSharp ? image.childImageSharp.fluid.srcWebp : image
-                      })`,
-                      backgroundPosition: `top left`,
-                      backgroundAttachment: `fixed`,
-                    }}
-                  ></div>
-                  <Container>
-              <div className="header-body text-center mb-9">
-                <Row className="justify-content-center">
-                  <Col className="px-5" lg="6" md="8" xl="5">
-                    <h1 className="text-white">    {title}</h1>
-                    <p className="text-lead text-white">
-                    {subheading}
-                    </p>
-                  </Col>
-                </Row>
-              </div>
-            </Container>
-            
-                </div>
-              </div>
+   
         <section className="upper">
           <Container>
             <Row>
@@ -61,7 +35,7 @@ export const IndexPageTemplate = ({
                 <Card className="card-invoice">
                   <CardBody>
                     <Row>
-                      <Col xs="12">
+                      <Col xs="12"> 
                   
                                                    
                                                     <section className="section section--gradient">

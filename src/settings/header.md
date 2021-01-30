@@ -1,8 +1,6 @@
 ---
-headercolor: rgba(212, 98, 98, 0.62)
-headerimage:
-  image: /img/header.jpg
-  alt: Lucy Edge
+templateKey: sitesettings
+headercolor: rgba(0, 0, 0, 0.62)
 headertransparancy: true
 headerbackgroundimage: /img/header.jpg
 menutype: Transparent

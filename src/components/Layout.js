@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import PropTypes from 'prop-types'
 
 import './all.sass'
 
@@ -18,11 +19,15 @@ import "../assets/scss/argon-design-system.scss?v1.0.0";
 // Core Components
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-
+import {
+  Container,
+  Row,
+  Col,  
+} from "reactstrap";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
-  const { fbpageid, twitter, location} = GetSiteSettings()
+  const { fbpageid, twitter, location, headercolor,  menutype, headerbackgroundimage} = GetSiteSettings()
 
  
   return (
@@ -87,10 +92,36 @@ const TemplateWrapper = ({ children }) => {
         <meta name="og:type" content="website" />
         <meta property="fb:page_id" content={fbpageid} /> 
         <meta name="geo.position" content={location.substring( 0, location.indexOf( "]}" ) ).substring(31)} />
-      </Helmet>    
+      </Helmet>   
 
-      <Header type="transparent" />
+      <Header type={menutype} />
         <div className="wrapper">
+      
+        <div className="section-shaped my-0 skew-separator skew-mini">
+                <div className="page-header page-header-small header-filter ">
+               
+                  <div
+                    className="page-header-image"
+                    style={{
+                      backgroundImage: `url(${
+                        !!headerbackgroundimage.childImageSharp ? headerbackgroundimage.childImageSharp.fluid.srcWebp : headerbackgroundimage
+                       })`,
+                      backgroundPosition: `top left`,
+                      backgroundAttachment: `fixed`,
+                    }}
+                  >    <div
+                  className="overlay"
+                  style={{
+                     backgroundColor: headercolor
+                  }}
+                ></div></div>
+                  <Container>
+          
+            </Container> 
+            
+                </div>
+              </div>
+
          {children}
         <Footer />
       </div>
@@ -101,7 +132,4 @@ const TemplateWrapper = ({ children }) => {
 }
 
 export default TemplateWrapper
-
-
-
 

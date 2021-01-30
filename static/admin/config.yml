@@ -275,12 +275,31 @@ collections:
   - name: "setting"
     label: "Setting"
     files:
-      - file: "src/settings/seo.md"
-        label: "SEO settings"
-        name: "seo"
+      - file: "src/settings/header.md"
+        label: "Header settings"
+        name: "header"
         editor:
           preview: false
         fields:
+          - {
+              label: "Header Background Image",
+              name: "headerbackgroundimage",
+              widget: "image",
+            }
+          - {
+              label: "Header Overlay",
+              name: "headercolor",
+              widget: "color",
+              enableAlpha: true,
+              allowInput: true,
+              collapsed: true,
+            }
+          - label: "Menu Type"
+            name: "menutype"
+            widget: "select"
+            multiple: false
+            options: ["Dark", "Transparent", "Primary", "White"]
+            default: ["transparent"]
           - { label: "Facebook Page ID", name: "fbpageid", widget: "string" }
           - { label: "Location", name: "location", widget: "map" }
       - file: "src/settings/footer.md"
