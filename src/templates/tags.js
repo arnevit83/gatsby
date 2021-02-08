@@ -3,6 +3,17 @@ import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
+
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  CardBody
+} from "reactstrap";
+
+
+
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
@@ -21,13 +32,22 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
+      
       <Layout>
+        <section className="upper">
+          <Container>
+            <Row>
+              <Col className="mx-auto" md="10">
+                <Card className="card-invoice">
+                  <CardBody>
+                    <Row>
+                      <Col xs="12"> 
         <section className="section">
           <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
               <div
-                className="column is-10 is-offset-1"
+                className="column is-12"
                 style={{ marginBottom: '6rem' }}
               >
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
@@ -39,6 +59,24 @@ class TagRoute extends React.Component {
             </div>
           </div>
         </section>
+
+
+
+
+
+        </Col>
+                    </Row>
+                  </CardBody>
+                 </Card>
+              </Col>
+          
+            </Row>
+          </Container>
+        </section>
+       
+
+
+
       </Layout>
     )
   }

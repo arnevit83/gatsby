@@ -19,23 +19,20 @@ export const SchedulePageTemplate = ({ title, content, contentComponent }) => {
 
 
 <>
-  <div className="section-shaped my-0 skew-separator skew-mini">
-    <div className="page-header page-header-small header-filter">
-    </div>
-  </div>
-  <section className="upper">
+<section className="upper">
           <Container>
             <Row>
               <Col className="mx-auto" md="10">
                 <Card className="card-invoice">
                   <CardBody>
                     <Row>
-                        <Col xs="12"></Col>
+                      <Col xs="12"> 
+                  
 
                                       <section className="section section--gradient">
                                         <div className="container">
                                           <div className="columns">
-                                            <div className="column is-10 is-offset-1">
+                                            <div className="column is-12">
                                               <div className="section">
                                                 <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                                                   {title}
@@ -48,8 +45,9 @@ export const SchedulePageTemplate = ({ title, content, contentComponent }) => {
                                       </section>
 
 
-                                              
-                                      </Row>
+
+                                      </Col>
+                    </Row>
                   </CardBody>
                  </Card>
               </Col>
@@ -58,7 +56,6 @@ export const SchedulePageTemplate = ({ title, content, contentComponent }) => {
           </Container>
         </section>
        
-
 
 
 

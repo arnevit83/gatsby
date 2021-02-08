@@ -20,25 +20,20 @@ export const ServicesPageTemplate = ({
   blurbs }) => (
 
     <>
-      <div className="section-shaped my-0 skew-separator skew-mini">
-        <div className="page-header page-header-small header-filter">
-        </div>
-      </div>
-      <section className="upper">
-              <Container>
-                <Row>
-                  <Col className="mx-auto" md="10">
-                    <Card className="card-invoice">
-                      <CardBody>
-                        <Row>
-                          <Col xs="12">
+         <section className="upper">
+          <Container>
+            <Row>
+              <Col className="mx-auto" md="10">
+                <Card className="card-invoice">
+                  <CardBody>
+                    <Row>
+                      <Col xs="12"> 
                   
-
 
                                                           <section className="section section--gradient">
                                                             <div className="container">
                                                               <div className="columns">
-                                                                <div className="column is-10 is-offset-1">
+                                                                <div className="column is-12">
                                                                   <div className="section">
                                                                     <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                                                                       {title}
@@ -59,17 +54,18 @@ export const ServicesPageTemplate = ({
                                                           </section>
 
 
-
-                                                          </Col>
-                        </Row>
-                      </CardBody>
-                    </Card>
-                  </Col>
-              
-                </Row>
-              </Container>
-            </section>
+      
+              </Col>
+                    </Row>
+                  </CardBody>
+                 </Card>
+              </Col>
           
+            </Row>
+          </Container>
+        </section>
+       
+
     </>
 
   )

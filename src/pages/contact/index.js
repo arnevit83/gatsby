@@ -47,26 +47,16 @@ export default class Index extends React.Component {
     return (
 
 <>
-  <div className="section-shaped my-0 skew-separator skew-mini">
-    <div className="page-header page-header-small header-filter">
-    
-    </div>
-  </div>
-
-
-
-
   
-  <section className="upper">
+                                                                <Layout>
+                                                                <section className="upper">
           <Container>
             <Row>
               <Col className="mx-auto" md="10">
                 <Card className="card-invoice">
                   <CardBody>
                     <Row>
-                        <Col xs="12">
-
-                                                                <Layout>
+                      <Col xs="12"> 
                                                                   <section className="section">
                                                                     <div className="container">
                                                                       <div className="content">
@@ -140,17 +130,27 @@ export default class Index extends React.Component {
                                                                       </div>
                                                                     </div>
                                                                   </section>
-                                                                </Layout>
+                                                             
+                                                             
+                                                             
 
-                  </Col>
-                  </Row>
+                                              </Col>
+                    </Row>
                   </CardBody>
                  </Card>
-              </Col> 
+              </Col>
           
             </Row>
           </Container>
         </section>
+       
+
+                                                             
+                                                                </Layout>
+
+                 
+               
+
     </>
 
     )
