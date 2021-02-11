@@ -275,6 +275,34 @@ collections:
   - name: "setting"
     label: "Setting"
     files:
+      - file: "src/settings/theme.md"
+        label: "Theme settings"
+        name: "theme"
+        editor:
+          preview: false
+        fields:
+          - { label: "Google Font", name: "font", widget: "string" }
+          - {
+              label: "default",
+              name: "colordefault",
+              widget: "color",
+              enableAlpha: false,
+              allowInput: true,
+            }
+          - {
+              label: "primary",
+              name: "colorprimary",
+              widget: "color",
+              enableAlpha: false,
+              allowInput: true,
+            }
+          - {
+              label: "secondary",
+              name: "colorsecondary",
+              widget: "color",
+              enableAlpha: false,
+              allowInput: true,
+            }
       - file: "src/settings/header.md"
         label: "Header settings"
         name: "header"
