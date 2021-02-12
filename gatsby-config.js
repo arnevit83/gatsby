@@ -8,6 +8,18 @@ module.exports = {
     'gatsby-transformer-sharp',
     {
       resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Your Yoga Site`,
+        short_name: `YourYogaSite`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#172b4d`,
+        display: `standalone`,
+        icon: `src/img/logo.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-react-helmet',
