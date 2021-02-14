@@ -45,78 +45,54 @@ collections:
               widget: "hidden",
               default: "index-page",
             }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
           - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "Header settings and style",
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Description, name: description, widget: string },
+                  { label: Image, name: image, widget: image },
                   {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
+                    label: "Header Style",
+                    name: "headerstyle",
+                    widget: "select",
+                    options: ["left", "center", "right"],
                   },
                 ],
             }
           - {
-              label: Main,
-              name: main,
-              widget: object,
+              label: Main content,
+              name: blurbs,
+              widget: list,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: markdown },
                   {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
+                    label: "Align Content",
+                    name: "align",
+                    widget: "select",
+                    options: ["left", "center", "right"],
                   },
+                ],
+            }
+          - {
+              label: "Page Footer",
+              name: "footerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "Footer call to actions",
+              fields:
+                [
                   {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
+                    label: "Call to action ",
+                    name: "headerstyle",
+                    widget: "select",
+                    options: ["Blog", "Button"],
                   },
                 ],
             }
@@ -139,7 +115,7 @@ collections:
               fields:
                 [
                   { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
+                  { label: Text, name: text, widget: markdown },
                   {
                     label: "Align Content",
                     name: "align",
