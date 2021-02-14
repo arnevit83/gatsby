@@ -54,8 +54,7 @@ collections:
               fields:
                 [
                   { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: string },
-                  { label: Image, name: image, widget: image },
+                  { label: Description, name: description, widget: markdown },
                   {
                     label: "Header Style",
                     name: "headerstyle",
@@ -68,6 +67,7 @@ collections:
               label: Main content,
               name: blurbs,
               widget: list,
+              collapsed: true,
               fields:
                 [
                   { label: Image, name: image, widget: image },
@@ -90,9 +90,9 @@ collections:
                 [
                   {
                     label: "Call to action ",
-                    name: "headerstyle",
+                    name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Button"],
+                    options: ["Blog", "Instagram"],
                   },
                 ],
             }

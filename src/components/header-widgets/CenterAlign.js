@@ -11,8 +11,8 @@ class CenterAlign extends React.Component {
       <Container>
         <Row>
           <Col className="mx-auto">      
-            <PreviewCompatibleImage imageInfo={this.props.image} />
-            <p className="text-center">{this.props.text}</p>
+            <h1 className="text-center">{this.props.title}</h1>
+            <p className="text-center">{this.props.description}</p>
           </Col>
         </Row>
       </Container>
@@ -22,9 +22,9 @@ class CenterAlign extends React.Component {
 
 CenterAlign.propTypes = {
   data: PropTypes.shape({
-    text: PropTypes.string,
-    align: PropTypes.string,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    title: PropTypes.string,
+    description: PropTypes.string,
+    headerstyle: PropTypes.string,
   }),
 }
 

@@ -4,15 +4,13 @@ import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import { Badge, Container, Row, Col } from "reactstrap";
 
-
-class CenterAlign extends React.Component {
+class Instagram extends React.Component {
   render() {
     return (
       <Container>
         <Row>
           <Col className="mx-auto">      
-            <PreviewCompatibleImage imageInfo={this.props.image} />
-            <p className="text-center">{this.props.text}</p>
+           Instagram feed
           </Col>
         </Row>
       </Container>
@@ -20,12 +18,10 @@ class CenterAlign extends React.Component {
   }
 }
 
-CenterAlign.propTypes = {
+Instagram.propTypes = {
   data: PropTypes.shape({
-    text: PropTypes.string,
-    align: PropTypes.string,
-    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
+    footerstyle: PropTypes.string,
   }),
 }
 
-export default CenterAlign
+export default Instagram
