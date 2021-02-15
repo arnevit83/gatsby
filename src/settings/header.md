@@ -1,6 +1,6 @@
 ---
 templateKey: sitesettings
-headercolor: rgba(95, 98, 208, 0.62)
+headercolor: rgba(57, 57, 57, 0.62)
 headertransparancy: true
 headerbackgroundimage: /img/header.jpg
 menutype: Transparent
