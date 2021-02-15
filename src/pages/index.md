@@ -4,11 +4,10 @@ subheading: Supporting you in your yoga travels
 templateKey: index-page
 headerobject:
   title: Lucy Edge
-  description:
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  description: Kaldi is the coffee store for everyone who believes that great
+    coffee shouldn't just taste good, it should do good too. We source all of
+    our beans directly from small scale sustainable farmers and make sure part
+    of the profits are reinvested in their communities.
   headerstyle: center
 blurbs:
   - align: center
@@ -20,7 +19,9 @@ blurbs:
   - text: image on the right
     align: right
     image: /img/chemex.jpg
-
+  - text: fyj dghjfg j
+    align: center
+    image: /img/blog-index.jpg
 footerobject:
   footerstyle: Blog
 image: /img/header.jpg
