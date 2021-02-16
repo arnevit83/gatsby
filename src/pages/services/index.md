@@ -13,6 +13,10 @@ blurbs:
   - text: image on the right
     align: right
     image: /img/chemex.jpg
+sections:
+  - image: /img/blog-index.jpg
+    text: left only
+    type: left
 ---
 
 ### Test
