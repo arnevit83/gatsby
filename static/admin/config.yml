@@ -109,18 +109,22 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Description, name: description, widget: string }
           - {
-              label: Blurbs,
-              name: blurbs,
+              label: Sections,
+              name: sections,
               widget: list,
               fields:
                 [
                   { label: Image, name: image, widget: image },
                   { label: Text, name: text, widget: markdown },
                   {
-                    label: "Align Content",
-                    name: "align",
+                    label: "Section Type",
+                    name: "type",
                     widget: "select",
-                    options: ["left", "center", "right"],
+                    options: [
+                      { label: "Image on left", value: "left" },
+                      { label: "Image on right", value: "right" },
+                      { label: "Just an Image", value: "center" },
+                      { label: "Text only", value: "text" }]
                   },
                 ],
             }
