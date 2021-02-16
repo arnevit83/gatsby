@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import PreviewCompatibleImage from '../PreviewCompatibleImage'
-import { Badge, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 
 class LeftAlign extends React.Component {

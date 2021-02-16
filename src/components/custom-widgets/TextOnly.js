@@ -3,16 +3,13 @@ import PropTypes from 'prop-types'
 import { Container, Row, Col } from "reactstrap";
 
 
-class RightAlign extends React.Component {
+class TextOnly extends React.Component {
   render() {
     return (
       <Container>
         <Row>
           <Col className="mx-auto">
-          <h3>{this.props.description}</h3>
-          </Col>
-          <Col className="mx-auto">      
-          <h1 className="text-center" >{this.props.title}</h1>
+            <p>{this.props.text}</p>
           </Col>
         </Row>
       </Container>
@@ -20,13 +17,12 @@ class RightAlign extends React.Component {
   }
 }
 
-RightAlign.propTypes = {
+TextOnly.propTypes = {
   data: PropTypes.shape({
     text: PropTypes.string,
-    description: PropTypes.string,
-    align: PropTypes.string,
-
+    type: PropTypes.string,
+    image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
 }
 
-export default RightAlign
+export default TextOnly

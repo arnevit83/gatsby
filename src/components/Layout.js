@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import PropTypes from 'prop-types'
 
 import './all.sass'
 
@@ -20,9 +19,7 @@ import "../assets/scss/argon-design-system.scss?v1.0.0";
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 import {
-  Container,
-  Row,
-  Col,  
+  Container
 } from "reactstrap";
 
 const TemplateWrapper = ({ children }) => {

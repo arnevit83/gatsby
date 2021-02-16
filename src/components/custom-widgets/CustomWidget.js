@@ -1,22 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import LeftAlign from './LeftAlign';
-import RightAlign from './RightAlign';
-import CenterAlign from './CenterAlign';
+import LeftAlignImage from './LeftAlignImage';
+import RightAlignImage from './RightAlignImage';
+import ImageOnly from './ImageOnly';
+import TextOnly from './TextOnly';
 
 
 class CustomWidget extends React.Component {
   getWidgetPicker(widget) {
-    if (widget.align === 'left') {
-      return <LeftAlign {...widget} />;
+    if (widget.type === 'left') {
+      return <LeftAlignImage {...widget} />;
     }
    
-    if (widget.align === 'center') {
-      return <CenterAlign {...widget} />;
+    if (widget.type === 'center') {
+      return <ImageOnly {...widget} />;
     }
    
-    if (widget.align === 'right') {
-      return <RightAlign {...widget} />;
+    if (widget.type === 'right') {
+      return <RightAlignImage {...widget} />;
+    }
+
+    if (widget.type === 'right') {
+      return <TextOnly {...widget} />;
     }
    
     return null;
@@ -34,7 +39,7 @@ class CustomWidget extends React.Component {
 CustomWidget.propTypes = {
   data: PropTypes.shape({
     text: PropTypes.string,
-    align: PropTypes.string,
+    type: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
 }

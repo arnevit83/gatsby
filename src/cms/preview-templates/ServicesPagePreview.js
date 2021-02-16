@@ -10,6 +10,7 @@ const ServicesPagePreview = ({ entry, getAsset }) => {
       <ServicesPageTemplate
         title={data.title}
         description={data.description}
+        sections={data.sections}
       />
     )
   } else {

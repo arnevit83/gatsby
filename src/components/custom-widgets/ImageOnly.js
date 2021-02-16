@@ -1,20 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
-import { Badge, Container, Row, Col } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 
 
-class LeftAlign extends React.Component {
+class ImageOnly extends React.Component {
   render() {
     return (
       <Container>
         <Row>
           <Col className="mx-auto">      
             <PreviewCompatibleImage imageInfo={this.props.image} />
-          </Col>
-          <Col className="mx-auto">
-            <p>{this.props.text}</p>
+            <p className="text-center">{this.props.text}</p>
           </Col>
         </Row>
       </Container>
@@ -22,12 +19,12 @@ class LeftAlign extends React.Component {
   }
 }
 
-LeftAlign.propTypes = {
+ImageOnly.propTypes = {
   data: PropTypes.shape({
     text: PropTypes.string,
-    align: PropTypes.string,
+    type: PropTypes.string,
     image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
   }),
 }
 
-export default LeftAlign
+export default ImageOnly
