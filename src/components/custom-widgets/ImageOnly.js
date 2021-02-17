@@ -10,7 +10,7 @@ class ImageOnly extends React.Component {
       <Container>
         <Row>
           <Col className="mx-auto">      
-            <PreviewCompatibleImage imageInfo={this.props.image} />
+            <PreviewCompatibleImage imageInfo={this.props} />
             <p className="text-center">{this.props.text}</p>
           </Col>
         </Row>

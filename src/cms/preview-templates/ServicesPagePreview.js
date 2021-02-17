@@ -4,13 +4,16 @@ import { ServicesPageTemplate } from '../../templates/services-page'
 
 const ServicesPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
+  
+  const entrySections = entry.getIn(['data', 'sections'])
+  const sections = entrySections ? entrySections.toJS() : []
 
   if (data) {
     return (
       <ServicesPageTemplate
         title={data.title}
         description={data.description}
-        sections={data.sections}
+        sections={ sections }
       />
     )
   } else {

@@ -6,7 +6,7 @@ import ImageOnly from './ImageOnly';
 import TextOnly from './TextOnly';
 
 
-class CustomWidget extends React.Component {
+export class CustomWidget extends React.Component {
   getWidgetPicker(widget) {
     if (widget.type === 'left') {
       return <LeftAlignImage {...widget} />;

@@ -10,7 +10,7 @@ class LeftAlignImage extends React.Component {
       <Container>
         <Row>
           <Col className="mx-auto">      
-            <PreviewCompatibleImage imageInfo={this.props.image} />
+            <PreviewCompatibleImage imageInfo={this.props} />
           </Col>
           <Col className="mx-auto">
             <p>{this.props.text}</p>

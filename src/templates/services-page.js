@@ -9,16 +9,10 @@ import {
   CardBody
 } from "reactstrap";
 
-export class ServicesPageTemplate extends React.Component {
-  constructor(props) {
-    super(props);
-
-    console.log(props);
-  }
-
-  render() {
-    return (
-    <section className="upper">
+export const ServicesPageTemplate = ({
+  title,
+  description,
+  sections }) => (
     <Container>
       <Row>
         <Col className="mx-auto" md="10">
@@ -26,81 +20,55 @@ export class ServicesPageTemplate extends React.Component {
             <CardBody>
               <Row>
                 <Col xs="12">
+                  <section className="section section--gradient">
+                    <div className="container">
+                      <div className="columns">
+                        <div className="column is-12">
+                          <div className="section">
+                            <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+                              {title}
+                            </h2>
+                            
+                            <p>{description}</p>
 
-                <section className="section section--gradient">
-                  <div className="container">
-                    <div className="columns">
-                      <div className="column is-12">
-                        <div className="section">
-                          <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                            {this.props.title}
-                          </h2>
-                          
-                          <p>{this.props.description}</p>
-
-                          <div className="section features-1">
-                          {this.props.sections.map((section, index) => (
-                            <CustomWidget key={index} {...section}></CustomWidget>
-                          ))}
+                            <div className="section features-1">
+                            {sections.map((section, index) => (
+                              <CustomWidget key={index.toString()} {...section}></CustomWidget>
+                            ))}
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </section>
-
-
-
-        </Col>
+                  </section>
+                </Col>
               </Row>
             </CardBody>
            </Card>
-        </Col>
-    
+        </Col>    
       </Row>
     </Container>
-  </section>
-    )
-  }
-}
+  )
 
 ServicesPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
   description: PropTypes.string,
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string,
-      type: PropTypes.string,
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
-    })
-  )
+  sections: PropTypes.array,
 }
 
-// const ServicesPage = ({ data }) => {
-//   const { frontmatter } = data.markdownRemark;
+const ServicesPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
 
-// }
-
-
-export default class ServicesPage extends React.Component {
-  constructor(props) {
-    super(props);
-
-    debugger;
-  }
-
-  render() {
-    return (
-      <Layout>
-        <ServicesPageTemplate
-          title={this.props.data.markdownRemark.frontmatter.title}
-          description={this.props.data.markdownRemark.frontmatter.description}
-          sections={this.props.data.markdownRemark.frontmatter.sections}
-        />
-      </Layout>
-    )
-  }
+  return (
+    <Layout>
+      <ServicesPageTemplate
+        title={frontmatter.title}
+        description={frontmatter.description}
+        sections={frontmatter.sections}
+      />
+    </Layout>
+  )
 }
 
 ServicesPage.propTypes = {
@@ -111,7 +79,7 @@ ServicesPage.propTypes = {
   }),
 }
 
-// export default ServicesPage
+export default ServicesPage
 
 export const pageQuery = graphql`
   query ServicesPageQuery {

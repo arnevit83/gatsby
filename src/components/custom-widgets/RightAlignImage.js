@@ -13,7 +13,7 @@ class RightAlignImage extends React.Component {
             <p>{this.props.text}</p>
           </Col>
           <Col className="mx-auto">      
-            <PreviewCompatibleImage imageInfo={this.props.image} />
+            <PreviewCompatibleImage imageInfo={this.props} />
           </Col>
         </Row>
       </Container>
