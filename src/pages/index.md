@@ -9,19 +9,16 @@ headerobject:
     our beans directly from small scale sustainable farmers and make sure part
     of the profits are reinvested in their communities.
   headerstyle: center
-blurbs:
-  - align: center
+sections:
+  - type: center
     text: just an image
     image: /img/blog-index.jpg
   - image: /img/home-jumbotron.jpg
     text: image on the left
-    align: left
+    type: left
   - text: image on the right
-    align: right
+    type: right
     image: /img/chemex.jpg
-  - text: fyj dghjfg j
-    align: center
-    image: /img/blog-index.jpg
 footerobject:
   footerstyle: Blog
 image: /img/header.jpg

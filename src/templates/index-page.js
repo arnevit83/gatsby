@@ -17,58 +17,40 @@ import {
 } from "reactstrap";
 
 export const IndexPageTemplate = ({
-  image,
-  title,
-  heading,
-  subheading,
-
-  description,
-  intro,headerobject,
-  blurbs,  blurb, footerobject
+  headerobject,
+  sections,
+  footerobject
 }) => (
-
-
-<>
-   
-        <section className="upper">
-          <Container>
-            <Row>
-              <Col className="mx-auto" md="10">
-                <Card className="card-invoice">
-                  <CardBody>
-                    <Row>
-                      <Col xs="12"> 
-
-                      {(headerobject) !== ''?<HeaderWidget key={headerobject.text} {...headerobject}></HeaderWidget>:''}
-                     
-                      <hr></hr>
-                    
-                      </Col>
-                      <Col xs="12"> 
-
-                      {(blurb) !== ''?blurbs.map((blurb) => (<CustomWidget key={blurb.text} {...blurb}></CustomWidget>)):''}
-                      <hr></hr>
-
-                      </Col>
-                      <Col xs="12"> 
-
-                      {(footerobject) !== ''?<FooterWidget key={footerobject.text} {...footerobject}></FooterWidget>:''}
-       
-
-                      </Col>
-                    </Row>
-                  </CardBody>
-                 </Card>
-              </Col>
+<Container>
+  <Row>
+    <Col className="mx-auto" md="10">
+      <Card className="card-invoice">
+        <CardBody>
+          <Row>
+            <Col xs="12">             
+            <HeaderWidget key={headerobject.text} {...headerobject}></HeaderWidget>
+            <hr />
           
-            </Row>
-          </Container>
-        </section>
-       
+            </Col>
+            <Col xs="12"> 
 
-</>
+            {sections.map((section, index) => (
+              <CustomWidget key={index.toString()} {...section}></CustomWidget>
+            ))}
+            <hr />
 
+            </Col>
+            <Col xs="12"> 
 
+            <FooterWidget key={footerobject.text} {...footerobject}></FooterWidget>
+
+            </Col>
+          </Row>
+        </CardBody>
+        </Card>
+    </Col>
+  </Row>
+</Container>
 )
 
 IndexPageTemplate.propTypes = {
@@ -77,13 +59,7 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   headerobject: PropTypes.object,
   footerobject: PropTypes.object,
-  blurbs: PropTypes.arrayOf(
-    PropTypes.shape({
-      text: PropTypes.string,
-      align: PropTypes.string,
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string])
-    })
-  )
+  sections: PropTypes.array,
 }
 
 const IndexPage = ({ data }) => {
@@ -97,7 +73,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         headerobject={frontmatter.headerobject}
         footerobject={frontmatter.footerobject}
-        blurbs={frontmatter.blurbs}
+        sections={frontmatter.sections}
       />
     </Layout>
   )
@@ -127,8 +103,8 @@ export const pageQuery = graphql`
         footerobject {
           footerstyle
         }
-        blurbs {
-          align
+        sections {
+          type
           text
           image {
             childImageSharp {
@@ -138,8 +114,6 @@ export const pageQuery = graphql`
             }
           }
         }
-
-        
       }
     }
   }
