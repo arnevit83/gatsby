@@ -5,6 +5,7 @@ import './all.sass'
 
 import useSiteMetadata from './SiteMetadata'
 import GetSiteSettings from './SiteSettings'
+import GlobalStyles from './GlobalStyles'
 import { withPrefix } from 'gatsby'
 
 //Argon Theme
@@ -28,15 +29,13 @@ const TemplateWrapper = ({ children }) => {
 
  
   return (
-
     <>
     <Helmet>
-
-
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -89,7 +88,9 @@ const TemplateWrapper = ({ children }) => {
         <meta name="og:type" content="website" />
         <meta property="fb:page_id" content={fbpageid} /> 
         <meta name="geo.position" content={location.substring( 0, location.indexOf( "]}" ) ).substring(31)} />
-      </Helmet>   
+      </Helmet>
+
+      <GlobalStyles />
 
       <Header type={menutype} />
         <div className="wrapper">
@@ -119,11 +120,9 @@ const TemplateWrapper = ({ children }) => {
                 </div>
               </div>
 
-         {children}
-        <Footer />
+        {children}
+      <Footer />
       </div>
-   
-
     </>
   );
 }
