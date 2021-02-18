@@ -13,13 +13,15 @@ export const ServicesPageTemplate = ({
   title,
   description,
   sections }) => (
-    <Container>
-      <Row>
-        <Col className="mx-auto" md="10">
-          <Card className="card-invoice">
-            <CardBody>
-              <Row>
-                <Col xs="12">
+<>
+<section className="upper">
+          <Container>
+            <Row>
+              <Col className="mx-auto" md="10">
+                <Card className="card-invoice">
+                  <CardBody>
+                    <Row>
+                      <Col xs="12"> 
                   <section className="section section--gradient">
                     <div className="container">
                       <div className="columns">
@@ -41,13 +43,25 @@ export const ServicesPageTemplate = ({
                       </div>
                     </div>
                   </section>
-                </Col>
-              </Row>
-            </CardBody>
-           </Card>
-        </Col>    
-      </Row>
-    </Container>
+               
+                  </Col>
+       
+
+      
+                                 
+       </Row>
+     </CardBody>
+    </Card>
+ </Col>
+
+</Row>
+</Container>
+</section>
+
+
+
+
+</>
   )
 
 ServicesPageTemplate.propTypes = {

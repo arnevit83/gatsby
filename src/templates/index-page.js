@@ -21,12 +21,16 @@ export const IndexPageTemplate = ({
   sections,
   footerobject
 }) => (
-<Container>
-  <Row>
-    <Col className="mx-auto" md="10">
-      <Card className="card-invoice">
-        <CardBody>
-          <Row>
+
+  <>
+<section className="upper">
+          <Container>
+            <Row>
+              <Col className="mx-auto" md="10">
+                <Card className="card-invoice">
+                  <CardBody>
+                    <Row>
+       
             <Col xs="12">             
             <HeaderWidget key={headerobject.text} {...headerobject}></HeaderWidget>
             <hr />
@@ -44,13 +48,22 @@ export const IndexPageTemplate = ({
 
             <FooterWidget key={footerobject.text} {...footerobject}></FooterWidget>
 
-            </Col>
-          </Row>
-        </CardBody>
-        </Card>
+          
     </Col>
-  </Row>
+ 
+
+      
+                                 
+       </Row>
+     </CardBody>
+    </Card>
+ </Col>
+
+</Row>
 </Container>
+</section>
+
+</>
 )
 
 IndexPageTemplate.propTypes = {
