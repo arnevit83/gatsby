@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Your Yoga Site',
     description: 'Yoga site description.',
-    siteUrl: 'https://www.example.com'
+    siteUrl: 'https://cms.sparklingpeach.co.uk/'
   },
   plugins: ['gatsby-plugin-sharp', 'gatsby-transformer-sharp', {
     resolve: "gatsby-plugin-manifest",
@@ -114,6 +114,37 @@ module.exports = {
         // Avoids sending pageview hits from custom paths
         exclude: ["/admin/**"]
       }
+    }
+  }, {
+    resolve: "gatsby-plugin-feed",
+    options: {
+      query: "\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ",
+      feeds: [{
+        serialize: function serialize(_ref) {
+          var _ref$query = _ref.query,
+              site = _ref$query.site,
+              allMarkdownRemark = _ref$query.allMarkdownRemark;
+          return allMarkdownRemark.edges.map(function (edge) {
+            return Object.assign({}, edge.node.frontmatter, {
+              description: edge.node.excerpt,
+              date: edge.node.frontmatter.date,
+              url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+              custom_elements: [{
+                "content:encoded": edge.node.html
+              }]
+            });
+          });
+        },
+        query: "\n              {\n                allMarkdownRemark(\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                ) {\n                  edges {\n                    node {\n                      excerpt\n                      html\n                      fields { slug }\n                      frontmatter {\n                        title\n                        date\n                      }\n                    }\n                  }\n                }\n              }\n            ",
+        output: "/rss.xml",
+        title: "Your Site's RSS Feed",
+        // optional configuration to insert feed reference in pages:
+        // if `string` is used, it will be used to create RegExp and then test if pathname of
+        // current page satisfied this regular expression;
+        // if not provided or `undefined`, all pages will have feed reference inserted
+        match: "^/blog/"
+      }]
     }
   }]
 };
