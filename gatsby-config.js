@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Your Yoga Site',
     description: 'Yoga site description.',
+    siteUrl: 'https://www.example.com',
   },
   plugins: [
     'gatsby-plugin-sharp',
@@ -101,5 +102,6 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-  ],
+    'gatsby-plugin-sitemap'
+  ]
 }
