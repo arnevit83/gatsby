@@ -10,6 +10,7 @@
     "choices.js": "9.0.1",
     "gatsby": "^2.20.35",
     "gatsby-image": "^2.3.5",
+    "gatsby-plugin-catch-links": "^2.10.0",
     "gatsby-plugin-google-gtag": "^2.8.0",
     "gatsby-plugin-manifest": "^2.4.36",
     "gatsby-plugin-netlify": "^2.2.4",

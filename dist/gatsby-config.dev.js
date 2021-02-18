@@ -90,7 +90,7 @@ module.exports = {
     }
   }, // must be after other CSS plugins
   'gatsby-plugin-netlify', // make sure to keep it last in the array
-  'gatsby-plugin-sitemap', {
+  'gatsby-plugin-sitemap', 'gatsby-plugin-catch-links', {
     resolve: "gatsby-plugin-google-gtag",
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
