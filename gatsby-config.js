@@ -1,8 +1,12 @@
+const config = require("./src/settings/SiteConfig");
+
+
+
 module.exports = {
   siteMetadata: {
-    title: 'Your Yoga Site',
-    description: 'Yoga site description.',
-    siteUrl: 'https://cms.sparklingpeach.co.uk/',
+    title: config.siteTitle,
+    description: config.siteDescription,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     'gatsby-plugin-sharp',
@@ -10,13 +14,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Your Yoga Site`,
-        short_name: `YourYogaSite`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#172b4d`,
-        display: `standalone`,
-        icon: `src/img/logo.png`,
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
+        start_url: config.pathPrefix,
+        background_color: config.backgroundColor,
+        theme_color: config.themeColor,
+        display: "minimal-ui",
+        icon: config.siteLogo,
         icon_options: {
           purpose: `any maskable`,
         },
@@ -109,14 +113,14 @@ module.exports = {
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
-          "G-QQ3VR8Q8ZR", // Google Analytics / GA
-          "", // Google Ads / Adwords / AW
-          "", // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
+          config.GoogleAnalytics, // Google Analytics / GA
+          config.GoogleAds, // Google Ads / Adwords / AW
+          config.MarketingPlatform, // Marketing Platform advertising products (Display & Video 360, Search Ads 360, and Campaign Manager)
         ],
         // This object gets passed directly to the gtag config command
         // This config will be shared across all trackingIds
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
+          optimize_id: config.gtagConfigOptimize_id,
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -177,12 +181,10 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss.xml",
-            title: "Your Site's RSS Feed",
+            output: config.siteRss,
+            title: config.siteTitle,
             // optional configuration to insert feed reference in pages:
-            // if `string` is used, it will be used to create RegExp and then test if pathname of
-            // current page satisfied this regular expression;
-            // if not provided or `undefined`, all pages will have feed reference inserted
+
             match: "^/blog/",
   
           },
@@ -192,7 +194,7 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `tomato`,
+        color: config.themeColor,
         // Disable the loading spinner.
         showSpinner: false,
       },

@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from 'gatsby'
 import GetFooterSettings from './SiteFooterSettings'
+const config = require("../../src/settings/SiteConfig");
 // reactstrap components
 import {
   Button,
@@ -76,9 +77,8 @@ function Footer() {
           <Row className="align-items-center justify-content-md-between">
             <Col md="6">
               <div className="copyright">
-                © {new Date().getFullYear()}{" "}
-
-                Website created by <a
+              
+         {config.copyright}&nbsp;Website created by <a
                   href="https://cms.sparklingpeach.co.uk"
                   target="_blank"
                 >SparklingPeach</a>
