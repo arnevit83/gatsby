@@ -8,7 +8,30 @@ module.exports = {
     description: config.siteDescription,
     siteUrl: config.siteUrl
   },
-  plugins: ['gatsby-plugin-sharp', 'gatsby-transformer-sharp', {
+  plugins: [{
+    resolve: "gatsby-plugin-sitemap",
+    options: {
+      output: config.siteMap,
+      exclude: ["/contact/*", "/footer/", "/header/", "/theme/"],
+      query: "\n        {\n          allSitePage {\n                      nodes {\n                        path\n                      }\n                    }\n        }\n        ",
+      resolveSiteUrl: function resolveSiteUrl(_ref) {
+        var site = _ref.site,
+            allSitePage = _ref.allSitePage;
+        return config.siteUrl;
+      },
+      serialize: function serialize(_ref2) {
+        var site = _ref2.site,
+            allSitePage = _ref2.allSitePage;
+        return allSitePage.nodes.map(function (node) {
+          return {
+            url: config.siteUrl + node.path,
+            changefreq: "daily",
+            priority: 0.7
+          };
+        });
+      }
+    }
+  }, 'gatsby-plugin-sharp', 'gatsby-transformer-sharp', {
     resolve: "gatsby-plugin-manifest",
     options: {
       name: config.siteTitle,
@@ -92,7 +115,7 @@ module.exports = {
     }
   }, // must be after other CSS plugins
   'gatsby-plugin-netlify', // make sure to keep it last in the array
-  'gatsby-plugin-sitemap', 'gatsby-plugin-catch-links', {
+  'gatsby-plugin-catch-links', {
     resolve: "gatsby-plugin-google-gtag",
     options: {
       // You can add multiple tracking ids and a pageview event will be fired for all of them.
@@ -122,10 +145,10 @@ module.exports = {
     options: {
       query: "\n          {\n            site {\n              siteMetadata {\n                title\n                description\n                siteUrl\n                site_url: siteUrl\n              }\n            }\n          }\n        ",
       feeds: [{
-        serialize: function serialize(_ref) {
-          var _ref$query = _ref.query,
-              site = _ref$query.site,
-              allMarkdownRemark = _ref$query.allMarkdownRemark;
+        serialize: function serialize(_ref3) {
+          var _ref3$query = _ref3.query,
+              site = _ref3$query.site,
+              allMarkdownRemark = _ref3$query.allMarkdownRemark;
           return allMarkdownRemark.edges.map(function (edge) {
             return Object.assign({}, edge.node.frontmatter, {
               description: edge.node.excerpt,
@@ -138,10 +161,11 @@ module.exports = {
             });
           });
         },
-        query: "\n              {\n                allMarkdownRemark(\n                  sort: { order: DESC, fields: [frontmatter___date] },\n                ) {\n                  edges {\n                    node {\n                      excerpt\n                      html\n                      fields { slug }\n                      frontmatter {\n                        title\n                        date\n                      }\n                    }\n                  }\n                }\n              }\n            ",
+        query: "\n            {\n              allMarkdownRemark(\n                filter: {fields: {\n                  slug:{ regex: \"^/blog/\"}\n                }},\n                \n                sort: {order: DESC, fields: [frontmatter___date]}) {\n                edges {\n                  node {\n                    excerpt\n                    html\n                    fields {\n                      slug\n                    }\n                    frontmatter {\n                      title\n                      date\n                    }\n                  }\n                }\n              }\n            }\n            ",
         output: config.siteRss,
         title: config.siteTitle,
         // optional configuration to insert feed reference in pages:
+        createLinkInHead: true,
         match: "^/blog/"
       }]
     }

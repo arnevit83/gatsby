@@ -19,6 +19,7 @@ const config = {
 
     siteLogo: "src/img/logo.png", // Logo used for SEO and manifest.
     siteRss: "/rss.xml", // Path to the RSS file.
+    siteMap: "/sitemap.xml", // Path to the Sitemap file.
     copyright: "Copyright © " + new Date().getFullYear(), // Copyright string for the footer of the website and RSS feed.
     
   };

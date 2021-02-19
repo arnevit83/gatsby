@@ -1,7 +1,6 @@
 const config = require("./src/settings/SiteConfig");
 
 
-
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -9,6 +8,41 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
+    
+
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: config.siteMap,
+        exclude: [`/contact/*`, `/footer/`, `/header/`, `/theme/`],
+        query: `
+        {
+          allSitePage {
+                      nodes {
+                        path
+                      }
+                    }
+        }
+        `,resolveSiteUrl: ({site, allSitePage}) => {
+          return config.siteUrl 
+        },
+        serialize: ({ site, allSitePage }) =>
+          allSitePage.nodes.map(node => {
+            return {
+              url: config.siteUrl + node.path,
+              changefreq: `daily`,
+              priority: 0.7,
+            }
+          })
+      }
+    }
+  ,
+
+
+
+
+
+
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -106,8 +140,14 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify', // make sure to keep it last in the array
-    'gatsby-plugin-sitemap',
+
+
+
+
+
+   
     'gatsby-plugin-catch-links',
+
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -163,28 +203,33 @@ module.exports = {
               })
             },
             query: `
-              {
-                allMarkdownRemark(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                ) {
-                  edges {
-                    node {
-                      excerpt
-                      html
-                      fields { slug }
-                      frontmatter {
-                        title
-                        date
-                      }
+            {
+              allMarkdownRemark(
+                filter: {fields: {
+                  slug:{ regex: "^/blog/"}
+                }},
+                
+                sort: {order: DESC, fields: [frontmatter___date]}) {
+                edges {
+                  node {
+                    excerpt
+                    html
+                    fields {
+                      slug
+                    }
+                    frontmatter {
+                      title
+                      date
                     }
                   }
                 }
               }
+            }
             `,
             output: config.siteRss,
             title: config.siteTitle,
             // optional configuration to insert feed reference in pages:
-
+            createLinkInHead: true,
             match: "^/blog/",
   
           },
