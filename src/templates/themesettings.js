@@ -20,6 +20,7 @@ export const ThemeSettingsQuery = graphql`
       html
       frontmatter {
         font
+        fontalt
         colordefault
         colorprimary
         colorsecondary

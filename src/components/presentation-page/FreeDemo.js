@@ -1,5 +1,4 @@
 import React from "react";
-import GitHubButton from "react-github-button";
 // reactstrap components
 import {
   Badge,
@@ -40,12 +39,7 @@ function FreeDemo() {
                     View Demo on Github
                   </Button>
                   <div className="github-button">
-                    <GitHubButton
-                      type="stargazers"
-                      size="large"
-                      namespace="creativetimofficial"
-                      repo="argon-design-system-react"
-                    />
+
                   </div>
                 </div>
               </div>

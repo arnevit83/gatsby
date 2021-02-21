@@ -6,13 +6,12 @@ import Instagram from './Instagram';
 class FooterWidget extends React.Component {
   getWidgetPicker(widget) {
      if (widget.footerstyle === 'Instagram') {
-       return <Instagram {...widget} />;
+       return <Instagram />;
       }
    
     if (widget.footerstyle === 'Blog') {
-      return <Blog {...widget} />;
+      return <Blog />;
     }
-   
    
     return null;
   }

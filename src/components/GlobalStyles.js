@@ -5,8 +5,20 @@ import { graphql, StaticQuery } from 'gatsby'
 class GlobalStyles extends React.Component {
   render() {
     const data = this.props.data.markdownRemark.frontmatter;
-    var style = `:root { --default: ${data.colordefault}; --primary: ${data.colorprimary}; --secondary: ${data.colorsecondary};}`;
-    return <style id="global-colours">{style}</style>    
+    var style = `:root { --default: ${data.colordefault}; --primary: ${data.colorprimary}; --secondary: ${data.colorsecondary}; --font-family-sans: ${data.font}; --font-family-alt: ${data.fontalt};}`;
+    var stylesheet = '';
+
+    if (data.font == data.fontalt) {
+      stylesheet = `https://fonts.googleapis.com/css2?family=${data.font}&family=Open+Sans&display=swap`;
+    } else {
+      stylesheet = `https://fonts.googleapis.com/css2?family=${data.font}&family=${data.fontalt}&family=Open+Sans&display=swap`;
+    }
+
+    return <>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href={stylesheet} rel="stylesheet" />
+      <style id="global-colours">{style}</style>
+    </>
   }
 }
 
@@ -26,6 +38,7 @@ query={graphql`
       html
       frontmatter {
         font
+        fontalt
         colordefault
         colorprimary
         colorsecondary

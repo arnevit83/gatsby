@@ -130,8 +130,7 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: markdown },
+                  { label: name, name: name, widget: string },
                   {
                     label: "Section Type",
                     name: "type",
@@ -144,6 +143,8 @@ collections:
                         { label: "Text only", value: "text" },
                       ],
                   },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: markdown },
                 ],
             }
       - file: "src/pages/about/index.md"
@@ -279,7 +280,8 @@ collections:
         editor:
           preview: false
         fields:
-          - { label: "Google Font", name: "font", widget: "string" }
+          - { label: "Google Header Font", name: "fontalt", widget: "string" }
+          - { label: "Google Text Font", name: "font", widget: "string" }
           - {
               label: "default",
               name: "colordefault",
