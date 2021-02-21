@@ -13,15 +13,19 @@ sections:
   - type: center
     text: just an image
     image: /img/blog-index.jpg
+    name: "1"
   - image: /img/home-jumbotron.jpg
     text: image on the left
     type: left
+    name: "2"
   - text: image on the right
     type: right
     image: /img/chemex.jpg
+    name: "3"
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 ---
+youtube cQk9vRhfe-g
