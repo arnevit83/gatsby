@@ -8,6 +8,9 @@ import ProductPagePreview from './preview-templates/ProductPagePreview'
 import IndexPagePreview from './preview-templates/IndexPagePreview'
 import ServicesPagePreview from './preview-templates/ServicesPagePreview'
 
+import YoutubeCustomWidget from './custom-widget/YoutubeCustomWidget'
+
+
 CMS.registerMediaLibrary(uploadcare)
 CMS.registerMediaLibrary(cloudinary)
 
@@ -16,3 +19,7 @@ CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('products', ProductPagePreview)
 CMS.registerPreviewTemplate('blog', BlogPostPreview)
 CMS.registerPreviewTemplate('services', ServicesPagePreview)
+
+
+//Custom Widjets instead of segments
+CMS.registerEditorComponent(YoutubeCustomWidget)
