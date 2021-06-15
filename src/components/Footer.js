@@ -3,19 +3,23 @@ import React from "react";
 import { Link } from 'gatsby'
 import GetFooterSettings from './SiteFooterSettings'
 const config = require("../../src/settings/SiteConfig");
+import TwitterButton from "./SocialButtons/TwitterButton";
+import FacebookButton from "./SocialButtons/FacebookButton";
+import InstagramButton from "./SocialButtons/InstagramButton";
+
+
 // reactstrap components
 import {
-  Button,
   Container,
   Row,
   Col,
-  UncontrolledTooltip,
 } from "reactstrap";
+
 
 // Core Components
 
 function Footer() {
-  const {footertitle,footerdesc,twitter,facebook,ig} =  GetFooterSettings();
+  const {footertitle,footerdesc} =  GetFooterSettings();
   return (
     <>
       <footer className="footer">
@@ -30,47 +34,12 @@ function Footer() {
               </h4>
             </Col>
             <Col className="text-lg-center btn-wrapper" lg="6">
-              <Button
-                className="btn-icon-only rounded-circle"
-                color="twitter"
-                id="tooltip46149983"
-            
-              >
          
-                <span className="btn-inner--icon">
-                <a href={"https://twitter.com/" + twitter}><i className="fab fa-twitter textwhite"></i></a>
-                </span>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip46149983">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-icon-only rounded-circle"
-                color="facebook"
-                id="tooltip844497435"
-              >
-                <span className="btn-inner--icon">
+<TwitterButton></TwitterButton>
+<FacebookButton></FacebookButton>
+<InstagramButton></InstagramButton>
 
-                  <a href={"https://facebook.com/" + facebook}><i className="fab fa-facebook textwhite"></i></a>
-                </span>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip844497435">
-                Like us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-icon-only rounded-circle"
-                color="dribbble"
-                id="tooltip564081339"
-              >
-                <span className="btn-inner--icon">
-       
-                  <a href={"https://instagram.com/" + ig}><i className="fab fa-instagram textwhite"></i></a>
-                </span>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip564081339">
-                Follow us
-              </UncontrolledTooltip>
- 
+
             </Col>
           </Row>
           <hr></hr>
@@ -112,18 +81,7 @@ function Footer() {
             </Col>
           </Row>
         </Container>
-        <Button
-          className="btn-icon-only back-to-top show"
-          color="primary"
-          name="button"
-          type="button"
-          onClick={() => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
-          }}
-        >
-          <i className="ni ni-bold-up"></i>
-        </Button>
+
       </footer>
     </>
   );

@@ -5,6 +5,8 @@ import './all.sass'
 
 import useSiteMetadata from './SiteMetadata'
 import GetSiteSettings from './SiteSettings'
+
+
 import GlobalStyles from './GlobalStyles'
 import { withPrefix } from 'gatsby'
 
@@ -27,7 +29,6 @@ const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   const { fbpageid, twitter, location, headercolor,  menutype, headerbackgroundimage} = GetSiteSettings()
 
- 
   return (
     <>
     <Helmet>
@@ -97,7 +98,6 @@ const TemplateWrapper = ({ children }) => {
       
         <div className="section-shaped my-0 skew-separator skew-mini">
                 <div className="page-header page-header-small header-filter ">
-               
                   <div
                     className="page-header-image"
                     style={{
@@ -114,11 +114,9 @@ const TemplateWrapper = ({ children }) => {
                   }}
                 ></div></div>
                   <Container>
-          
-            </Container> 
-            
+                  </Container> 
                 </div>
-              </div>
+        </div>
 
         {children}
       <Footer />

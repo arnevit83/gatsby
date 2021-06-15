@@ -2,8 +2,6 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 
 
-
-
 const GetFooterSettings = () => {
   const { markdownRemark } = useStaticQuery(
     graphql`
