@@ -1,6 +1,7 @@
 import React from "react";
 import { navigate } from "gatsby-link";
 import axios from "Axios";
+
 import Layout from "../../components/Layout";
 
 import InstagramButton from "../../components/SocialButtons/InstagramButton";
