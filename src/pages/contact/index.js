@@ -1,6 +1,6 @@
 import React from "react";
 import { navigate } from "gatsby-link";
-import axios from "Axios";
+const axios = require("axios");
 
 import Layout from "../../components/Layout";
 
