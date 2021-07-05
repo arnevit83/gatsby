@@ -67,6 +67,29 @@ collections:
             }
           - { label: "Body", name: "body", widget: "markdown" }
           - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  { label: name, name: name, widget: string },
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        { label: "Image on left", value: "left" },
+                        { label: "Image on right", value: "right" },
+                        { label: "Just an Image", value: "center" },
+                        { label: "Text only", value: "text" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: markdown },
+                ],
+            }
+          - {
               label: Footer Sections,
               name: "footerobjects",
               widget: list,

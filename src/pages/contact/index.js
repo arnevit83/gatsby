@@ -1,6 +1,5 @@
 import React from "react";
 import { navigate } from "gatsby-link";
-const axios = require("axios");
 
 import Layout from "../../components/Layout";
 
@@ -12,6 +11,8 @@ import styles from "./index.module.css";
 
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
 import EmailButton from "../../components/SocialButtons/EmailButton";
+
+const axios = require("axios");
 
 function encode(data) {
 	return Object.keys(data)
@@ -49,7 +50,7 @@ export default class Index extends React.Component {
 			<>
 				<Layout>
 					<section className="upper">
-						<Container>
+						<Container fluid={true}>
 							<Row>
 								<Col className="mx-auto" md="10">
 									<Card className="card-invoice">
@@ -84,7 +85,7 @@ export default class Index extends React.Component {
 											<Row>
 												<Col xs="12">
 													<section className="section">
-														<div className="container">
+														<div className="container-fluid">
 															<div className="row">
 																<div className="col">
 																	<Card className="card-invoice">
