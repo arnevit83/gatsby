@@ -1,16 +1,7 @@
 import React from "react";
-//import PropTypes from "prop-types";
 
-const YoutubePreview = ({ entry, widgetFor }) => {
-	//const tags = entry.getIn(['data', 'tags'])
-	return <div>youtubeing</div>;
+const YoutubePreview = (youtubeId, aspectRatio) => {
+	return `<div class="aspect-ratio" style="--aspect-ratio: ${aspectRatio}"><iframe class="youtube-player video video--youtube" src="https://www.youtube.com/embed/${youtubeId}/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
 };
-
-// BlogPostPreview.propTypes = {
-//   entry: PropTypes.shape({
-//     getIn: PropTypes.func,
-//   }),
-//   widgetFor: PropTypes.func,
-// }
 
 export default YoutubePreview;

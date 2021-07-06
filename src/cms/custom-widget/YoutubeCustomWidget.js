@@ -5,6 +5,7 @@ const YoutubeCustomWidget = {
 	label: "Youtube",
 	// Fields the user need to fill out when adding an instance of the component
 	fields: [
+		{ name: "id", label: "YouTube ID", widget: "string" },
 		{
 			name: "aspect_ratio",
 			label: "Aspect ratio",
@@ -13,7 +14,6 @@ const YoutubeCustomWidget = {
 			options: ["16/9", "4/3", "1/1"],
 			default: "16/9",
 		},
-		{ name: "id", label: "YouTube ID", widget: "string" },
 	],
 	// Pattern to identify a block as being an instance of this component
 	pattern: /^{% youtube \"(\S+)\", \"(\S+)\" %}$/,
@@ -21,6 +21,7 @@ const YoutubeCustomWidget = {
 	fromBlock: function (match) {
 		return {
 			id: match[1],
+			aspect_ratio: match[2],
 		};
 	},
 	// Function to create a text block from an instance of this component
@@ -37,4 +38,5 @@ const YoutubeCustomWidget = {
 		);
 	},
 };
+
 export default YoutubeCustomWidget;

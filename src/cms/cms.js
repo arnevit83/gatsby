@@ -19,7 +19,7 @@ CMS.registerPreviewTemplate("about", AboutPagePreview);
 CMS.registerPreviewTemplate("products", ProductPagePreview);
 CMS.registerPreviewTemplate("blog", BlogPostPreview);
 CMS.registerPreviewTemplate("services", ServicesPagePreview);
-CMS.registerPreviewTemplate("youtube", YoutubePreview);
 
-//Custom Widjets instead of segments
 CMS.registerEditorComponent(youtube);
+
+CMS.registerPreviewTemplate(YoutubePreview);
