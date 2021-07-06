@@ -17,4 +17,6 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 ---
 sgsdfgs
 
-{% youtube "vSyt3D1eut8", "1/1" %}
+{% youtube "vSyt3D1eut8", "16/9" %}
+
+![adgs](/img/chemex.jpg "sdfgs dfs sdf")
