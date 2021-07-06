@@ -17,6 +17,8 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
 ---
 ![vSyt3D1eut8][16/9]
 
+![test](/img/tutorials.png "test")
+
 Here is an into sentence
 
 {% youtube "vSyt3D1eut8", "16/9" %}
