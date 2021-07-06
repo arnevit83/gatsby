@@ -15,7 +15,7 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
 ---
-![test]( "test")
+![alt test]( "title test")
 
 Here is an into sentence
 
