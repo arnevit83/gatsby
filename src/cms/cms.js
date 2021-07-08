@@ -11,15 +11,13 @@ import YoutubePreview from "./preview-templates/YoutubePreview";
 
 import youtube from "./custom-widget/YoutubeCustomWidget";
 
-CMS.registerMediaLibrary(uploadcare);
-CMS.registerMediaLibrary(cloudinary);
+CMS.registerEditorComponent("youtube", youtube);
+CMS.registerPreviewTemplate("youtube", youtube);
+
+//CMS.registerPreviewTemplate(YoutubePreview);
 
 CMS.registerPreviewTemplate("index", IndexPagePreview);
 CMS.registerPreviewTemplate("about", AboutPagePreview);
 CMS.registerPreviewTemplate("products", ProductPagePreview);
 CMS.registerPreviewTemplate("blog", BlogPostPreview);
 CMS.registerPreviewTemplate("services", ServicesPagePreview);
-
-CMS.registerEditorComponent(youtube);
-
-CMS.registerPreviewTemplate(YoutubePreview);

@@ -16,7 +16,7 @@ const YoutubeCustomWidget = {
 		},
 	],
 	// Pattern to identify a block as being an instance of this component
-	pattern: /^{% youtube \"(\S+)\", \"(\S+)\" %}$/,
+	pattern: /^{{% youtube \"(\S+)\", \"(\S+)\" %}}$/,
 	// Function to extract data elements from the regexp match
 	fromBlock: function (match) {
 		return {
