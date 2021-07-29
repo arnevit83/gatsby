@@ -17,6 +17,8 @@ description: Kaldi is the ultimate spot for coffee lovers who want to learn
   knowledge to anyone.
 footerobjects: []
 ---
+![](/img/home0.png)
+
 Welcome to Butterfly and Beyond. I am glad you are here.
 
 If you are childless not by choice or by circumstance, and are wondering what life holds for you now, I want to let you know that you are not alone, you are not less than, and that it is possible to live a meaningful and fulfilled life without children.
@@ -25,4 +27,4 @@ I can’t have children and have not only come to accept a childless life, I’v
 
 I also work to promote **inclusivity** of childlessnesswithin society, including within the media and the workplace, to raise awareness of the unconscious bias and narrative that may lead to childless people feeling invisible and stripped of their self-worth and role.
 
-Sophia x \[in writing style]
+![adfaf](/img/signed.png "asdfsfd")
