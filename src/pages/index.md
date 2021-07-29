@@ -10,12 +10,30 @@ headerobject:
     not less than, and that it is possible to live a meaningful and fulfilled
     life without children. "
   headerstyle: center
+sections:
+  - type: center
+    image: /img/adobestock_232441971.jpeg
+    name: grsgdg
+    text: sgr sdgsdfg
+  - text: aa d dg dhdfh dhd fgh dfh dfh
+      dhfghdgggggggggggggggggggggggggggggggggggggggggg dfg fh  dfhdfhdfg
+    name: sdfgsfg
+    type: text
+    image: /img/adobestock_232441971.jpeg
+  - type: left
+    image: /img/adobestock_232441971.jpeg
+    text: dfg sdgs dg sdg sdfg
+    name: asdfasdf
+  - name: asdfasdf
+    type: right
+    image: /img/adobestock_232441971.jpeg
+    text: asdf daf sdf asf fd
+footerobjects: []
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
   production, roasting and brewing seriously and we’re glad to pass that
   knowledge to anyone.
-footerobjects: []
 ---
 Welcome to Butterfly and Beyond. I am glad you are here.
 
