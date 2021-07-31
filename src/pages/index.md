@@ -13,12 +13,12 @@ headerobject:
 sections:
   - type: Image on left - Text on right
     image: /img/adobestock_232441971.jpeg
-    text: dfg sdgs dg sdg sdfg
+    text: asdf
     name: asdfasdf
   - name: asdfasdf
     type: Image on right - Text on left
     image: /img/adobestock_232441971.jpeg
-    text: asdf daf sdf asf fd
+    text: asdf daf sdf asf fdasdf asdf
 footerobjects: []
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
