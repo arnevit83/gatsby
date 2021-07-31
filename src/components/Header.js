@@ -103,10 +103,6 @@ function Header(props) {
 							navbar
 						>
 							<div className="mx-auto navbar-nav">
-								<Link className="nav-link" to="/services">
-									Services
-								</Link>
-
 								<Link className="nav-link" to="/blog">
 									Blog
 								</Link>
