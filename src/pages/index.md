@@ -24,7 +24,7 @@ sections:
       I also work to promote **inclusivity** of childlessnesswithin society, including within the media and the workplace, to raise awareness of the unconscious bias and narrative that may lead to childless people feeling invisible and stripped of their self-worth and role.
     name: sdfgsfg
     type: Text only
-    image: ""
+    image: /img/adobestock_232441971.jpeg
   - type: Image only
     image: /img/adobestock_232441971.jpeg
     name: grsgdg
