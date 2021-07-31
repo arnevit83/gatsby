@@ -4,7 +4,7 @@ module.exports = {
 	siteMetadata: {
 		title: config.siteTitle,
 		description: config.siteDescription,
-		siteURL: config.siteUrl,
+		siteURL: config.siteURL,
 	},
 	plugins: [
 		{
@@ -170,8 +170,8 @@ module.exports = {
               siteMetadata {
                 title
                 description
-                siteUrl
-                site_url: siteUrl
+                siteURL
+                site_url: siteURL
               }
             }
           }
