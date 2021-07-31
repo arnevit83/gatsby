@@ -14,12 +14,6 @@ import EmailButton from "../../components/SocialButtons/EmailButton";
 
 const axios = require("axios");
 
-function encode(data) {
-	return Object.keys(data)
-		.map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-		.join("&");
-}
-
 export default class Index extends React.Component {
 	constructor(props) {
 		super(props);
@@ -37,8 +31,7 @@ export default class Index extends React.Component {
 		const form = e.target;
 		axios({
 			method: "post",
-			url:
-				"https://getform.io/f/098b3018-c3aa-4501-8cac-bb6b1f39dbb0?token=rVWaKMrabH1z5nqzc5QT28FNmu0bPZUzgxdF5wKhret3OIjpclv7D2N3sxCO",
+			url: "https://getform.io/f/098b3018-c3aa-4501-8cac-bb6b1f39dbb0?token=rVWaKMrabH1z5nqzc5QT28FNmu0bPZUzgxdF5wKhret3OIjpclv7D2N3sxCO",
 			data: new FormData(form),
 		})
 			.then(() => navigate(form.getAttribute("action")))
@@ -95,7 +88,8 @@ export default class Index extends React.Component {
 																				method="post"
 																				action="/contact/thanks/"
 																				data-netlify="true"
-																				onSubmit={this.handleSubmit}>
+																				onSubmit={this.handleSubmit}
+																			>
 																				{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
 
 																				<div className="form-group input-group">
@@ -103,7 +97,8 @@ export default class Index extends React.Component {
 																						<span
 																							htmlFor={"name"}
 																							for={"name"}
-																							className="input-group-text">
+																							className="input-group-text"
+																						>
 																							<i className="ni ni-circle-08"></i>
 																						</span>
 																					</div>{" "}
@@ -112,7 +107,6 @@ export default class Index extends React.Component {
 																						placeholder="Your Name"
 																						className="form-control"
 																						type="text"
-																						type={"text"}
 																						name={"name"}
 																						onChange={this.handleChange}
 																						id={"name"}
@@ -125,7 +119,8 @@ export default class Index extends React.Component {
 																						<span
 																							for={"email"}
 																							htmlFor={"email"}
-																							className="input-group-text">
+																							className="input-group-text"
+																						>
 																							<i className="ni ni-email-83"></i>
 																						</span>
 																					</div>{" "}
@@ -134,7 +129,6 @@ export default class Index extends React.Component {
 																						placeholder="Your Email"
 																						className="form-control"
 																						type="text"
-																						type={"email"}
 																						name={"email"}
 																						onChange={this.handleChange}
 																						id={"email"}
@@ -149,7 +143,8 @@ export default class Index extends React.Component {
 																							className={
 																								styles.inputgrouptextdisable +
 																								" input-group-text"
-																							}>
+																							}
+																						>
 																							<i className="ni ni-single-copy-04"></i>
 																						</span>
 																					</div>{" "}
@@ -172,13 +167,15 @@ export default class Index extends React.Component {
 																					<button
 																						disabled={this.state.loading}
 																						className="btn  float-right  btn-primary align-self-end"
-																						type="submit">
+																						type="submit"
+																					>
 																						<i
 																							class={
 																								!this.state.loading
 																									? "ni ni-send"
 																									: "ni ni-settings-gear-65 spin"
-																							}></i>{" "}
+																							}
+																						></i>{" "}
 																						{!this.state.loading
 																							? "Send"
 																							: "Submitting"}

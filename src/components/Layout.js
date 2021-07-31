@@ -1,19 +1,18 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-import "./all.sass";
-
-import useSiteMetadata from "./SiteMetadata";
 import GetSiteSettings from "./SiteSettings";
+import useSiteMetadata from "./SiteMetadata";
 
 import GlobalStyles from "./GlobalStyles";
 import { withPrefix } from "gatsby";
 
-//Argon Theme
+// Theme
 import "../assets/css/nucleo-svg.css";
 import "../assets/css/nucleo-icons.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../assets/scss/argon-design-system.scss?v1.0.0";
+import "./all.sass";
 
 // Core Components
 import Header from "../components/Header.js";
@@ -21,7 +20,8 @@ import Footer from "../components/Footer.js";
 import { Container } from "reactstrap";
 
 const TemplateWrapper = ({ children }) => {
-	const { title, description } = useSiteMetadata();
+	const { title, description, siteURL } = useSiteMetadata();
+
 	const {
 		fbpageid,
 		twitter,
@@ -37,6 +37,7 @@ const TemplateWrapper = ({ children }) => {
 				<html lang="en" />
 				<title>{title}</title>
 				<meta name="description" content={description} />
+
 				<meta
 					name="viewport"
 					content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -96,6 +97,7 @@ const TemplateWrapper = ({ children }) => {
 					name="geo.position"
 					content={location.substring(0, location.indexOf("]}")).substring(31)}
 				/>
+				<link rel="canonical" href={siteURL} />
 			</Helmet>
 
 			<GlobalStyles />
@@ -114,13 +116,14 @@ const TemplateWrapper = ({ children }) => {
 								})`,
 								backgroundPosition: `top left`,
 								backgroundAttachment: `fixed`,
-							}}>
-							{" "}
+							}}
+						>
 							<div
 								className="overlay"
 								style={{
 									backgroundColor: headercolor,
-								}}></div>
+								}}
+							></div>
 						</div>
 						<Container></Container>
 					</div>

@@ -38,7 +38,7 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Home Page"
         name: "index"
         fields:
           - {
@@ -57,38 +57,32 @@ collections:
                 [
                   { label: Title, name: title, widget: string },
                   { label: Description, name: description, widget: markdown },
-                  {
-                    label: "Header Style",
-                    name: "headerstyle",
-                    widget: "select",
-                    options: ["left", "center", "right"],
-                  },
+                - {
+                    label: Sections,
+                    name: sections,
+                    widget: list,
+                    fields:
+                      [
+                        { label: name, name: name, widget: string },
+                        {
+                          label: "Section Type",
+                          name: "type",
+                          widget: "select",
+                          options:
+                            [
+                              { label: "Image on left", value: "left" },
+                              { label: "Image on right", value: "right" },
+                              { label: "Just an Image", value: "center" },
+                              { label: "Text only", value: "text" },
+                            ],
+                        },
+                        { label: Image, name: image, widget: image },
+                        { label: Text, name: text, widget: markdown },
+                      ],
+                  }
                 ],
             }
           - { label: "Body", name: "body", widget: "markdown" }
-          - {
-              label: Sections,
-              name: sections,
-              widget: list,
-              fields:
-                [
-                  { label: name, name: name, widget: string },
-                  {
-                    label: "Section Type",
-                    name: "type",
-                    widget: "select",
-                    options:
-                      [
-                        { label: "Image on left", value: "left" },
-                        { label: "Image on right", value: "right" },
-                        { label: "Just an Image", value: "center" },
-                        { label: "Text only", value: "text" },
-                      ],
-                  },
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: markdown },
-                ],
-            }
           - {
               label: Footer Sections,
               name: "footerobjects",
@@ -114,10 +108,6 @@ collections:
                   { label: footerstylefile, name: footerfile, widget: file },
                 ],
             }
-      - file: "src/pages/services/index.md"
-        label: "Services Page"
-        name: "services"
-        fields:
           - {
               label: "Template Key",
               name: "templateKey",

@@ -1,19 +1,20 @@
 import React from "react";
+
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 
 import CustomWidget from "../components/custom-widgets/CustomWidget";
-import HeaderWidget from "../components/header-widgets/HeaderWidget";
-import FooterWidget from "../components/footer-widgets/FooterWidget";
+import HeaderSEO from "../components/header-widgets/SEOcontent";
+//import FooterWidget from "../components/footer-widgets/FooterWidget";
 import Content, { HTMLContent } from "../components/Content";
 
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
 
 export const IndexPageTemplate = ({
 	headerobject,
-	//	sections,
+	sections,
 	content,
 	contentComponent,
 	// footerobject
@@ -21,31 +22,21 @@ export const IndexPageTemplate = ({
 	const PageContent = contentComponent || Content;
 	return (
 		<>
+			<HeaderSEO key={headerobject.text} {...headerobject}></HeaderSEO>
 			<section className="upper">
 				<Container fluid={true}>
 					<Row>
 						<Col className="mx-auto" md="10">
 							<Card className="card-invoice">
 								<CardBody>
-									<Row>
-										<Col xs="12">
-											<HeaderWidget
-												key={headerobject.text}
-												{...headerobject}></HeaderWidget>
-											<hr />
-										</Col>
-										<Col xs="12">
-											<PageContent className="content" content={content} />
+									<PageContent className="content" content={content} />
 
-											{/* {sections.map((section, index) => (
-                  <CustomWidget key={index.toString()} {...section}></CustomWidget>
-                ))} */}
-											<hr />
-										</Col>
-										<Col xs="12">
-											{/* <FooterWidget key={footerobject.text} {...footerobject}></FooterWidget> */}
-										</Col>
-									</Row>
+									{sections.map((section, index) => (
+										<CustomWidget
+											key={index.toString()}
+											{...section}
+										></CustomWidget>
+									))}
 								</CardBody>
 							</Card>
 						</Col>
@@ -80,7 +71,7 @@ const IndexPage = ({ data }) => {
 				subheading={frontmatter.subheading}
 				headerobject={frontmatter.headerobject}
 				//  footerobject={frontmatter.footerobject}
-				//sections={frontmatter.sections}
+				sections={frontmatter.sections}
 			/>
 		</Layout>
 	);
@@ -98,15 +89,17 @@ export default IndexPage;
 
 export const pageQuery = graphql`
 	query IndexPageTemplate {
-		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+		markdownRemark(
+			frontmatter: {
+				templateKey: { eq: "index-page" }
+				sections: { elemMatch: {} }
+			}
+		) {
 			html
 			frontmatter {
-				heading
-				subheading
 				headerobject {
 					title
 					description
-					headerstyle
 				}
 				sections {
 					type

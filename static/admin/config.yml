@@ -38,7 +38,7 @@ collections:
     label: "Pages"
     files:
       - file: "src/pages/index.md"
-        label: "Landing Page"
+        label: "Home Page"
         name: "index"
         fields:
           - {
@@ -52,20 +52,47 @@ collections:
               name: "headerobject",
               widget: "object",
               collapsed: true,
-              summary: "Header settings and style",
+              summary: "SEO Page Information",
               fields:
                 [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: markdown },
-                  {
-                    label: "Header Style",
-                    name: "headerstyle",
-                    widget: "select",
-                    options: ["left", "center", "right"],
-                  },
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
                 ],
             }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  {
+                    label: Image,
+                    name: image,
+                    widget: image,
+                    default: "/img/default.png",
+                  },
+                  { label: Text, name: text, widget: markdown, default: "" },
+                ],
+            }
           - {
               label: Footer Sections,
               name: "footerobjects",
@@ -91,41 +118,6 @@ collections:
                   { label: footerstylefile, name: footerfile, widget: file },
                 ],
             }
-      - file: "src/pages/services/index.md"
-        label: "Services Page"
-        name: "services"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "services-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Sections,
-              name: sections,
-              widget: list,
-              fields:
-                [
-                  { label: name, name: name, widget: string },
-                  {
-                    label: "Section Type",
-                    name: "type",
-                    widget: "select",
-                    options:
-                      [
-                        { label: "Image on left", value: "left" },
-                        { label: "Image on right", value: "right" },
-                        { label: "Just an Image", value: "center" },
-                        { label: "Text only", value: "text" },
-                      ],
-                  },
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: markdown },
-                ],
-            }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
@@ -138,117 +130,6 @@ collections:
             }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
-      - file: "src/pages/shop/index.md"
-        label: "Products Page"
-        name: "products"
-        fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "product-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Testimonials,
-              name: testimonials,
-              widget: list,
-              fields:
-                [
-                  { label: Quote, name: quote, widget: string },
-                  { label: Author, name: author, widget: string },
-                ],
-            }
-          - { label: Full_image, name: full_image, widget: image }
-          - {
-              label: Pricing,
-              name: pricing,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: string },
-                  {
-                    label: Plans,
-                    name: plans,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Plan, name: plan, widget: string },
-                        { label: Price, name: price, widget: string },
-                        {
-                          label: Description,
-                          name: description,
-                          widget: string,
-                        },
-                        { label: Items, name: items, widget: list },
-                      ],
-                  },
-                ],
-            }
 
   - name: "setting"
     label: "Setting"

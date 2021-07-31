@@ -60,7 +60,8 @@ function Header(props) {
 			<Navbar
 				className={"navbar-main headroom " + navbarType}
 				expand="lg"
-				id="dark-navbar-main">
+				id="dark-navbar-main"
+			>
 				<Container>
 					<NavbarBrand className="mr-lg-5" to="/" tag={Link}>
 						<img src={logo} alt="{Yoga Logo}" style={{ width: "88px" }} /> Yoga
@@ -69,14 +70,16 @@ function Header(props) {
 					<button
 						className="navbar-toggler"
 						type="button"
-						onClick={() => toggleCollapse(!collapseOpen)}>
+						onClick={() => toggleCollapse(!collapseOpen)}
+					>
 						<span className="navbar-toggler-icon"></span>
 					</button>
 					<Collapse
 						id="navbar_global"
 						navbar
 						toggler="#navbar_global"
-						isOpen={collapseOpen}>
+						isOpen={collapseOpen}
+					>
 						<div className="navbar-collapse-header">
 							<Row>
 								<Col className="collapse-brand" xs="6">
@@ -87,7 +90,8 @@ function Header(props) {
 								<Col className="collapse-close" xs="6">
 									<button
 										className="navbar-toggler"
-										onClick={() => toggleCollapse(!collapseOpen)}>
+										onClick={() => toggleCollapse(!collapseOpen)}
+									>
 										<span></span>
 										<span></span>
 									</button>
@@ -96,59 +100,17 @@ function Header(props) {
 						</div>
 						<Nav
 							className="navbar-nav-hover align-items-lg-center ml-lg-auto"
-							navbar>
-							{/* 
-<UncontrolledDropdown nav>
-                <DropdownToggle
-                  tag={NavLink}
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
-                  role="button"
-                >
-                  <i className="ni ni-tablet-button d-lg-none"></i>
-                  <span className="nav-link-inner--text">App Pages</span>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink">
-   
-                  <DropdownItem to="/about"   tag={Link}>
-                    <i className="ni ni-tv-2 text-danger"></i>
-                    Abount
-                  </DropdownItem>
-                  
-               
-                  <DropdownItem to="/fandq" tag={Link}>
-                    <i className="ni ni-basket text-orange"></i>
-                    F&amp;Q
-                  </DropdownItem>
-                  <DropdownItem to="/contact" tag={Link}>
-                    <i className="ni ni-chat-round text-primary"></i>
-                    Contact
-                  </DropdownItem>
-                </DropdownMenu>
-                
-              </UncontrolledDropdown>
-        */}
-
+							navbar
+						>
 							<div className="mx-auto navbar-nav">
 								<Link className="nav-link" to="/services">
 									Services
 								</Link>
-								<Link className="nav-link" to="/about">
-									About
-								</Link>
-								<Link className="nav-link" to="/shop">
-									Shop
-								</Link>
+
 								<Link className="nav-link" to="/blog">
 									Blog
 								</Link>
-								<Link className="nav-link" to="/schedule">
-									Schedule
-								</Link>
-								<Link className="nav-link" to="/fandq">
-									F&amp;Q
-								</Link>
+
 								<Link className="nav-link" to="/contact">
 									Contact
 								</Link>
