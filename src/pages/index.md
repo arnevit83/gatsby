@@ -11,19 +11,6 @@ headerobject:
     life without children. "
   headerstyle: center
 sections:
-  - image: /img/default.png
-    text: >-
-      Welcome to Butterfly and Beyond. I am glad you are here.
-
-
-      If you are childless not by choice or by circumstance, and are wondering what life holds for you now, I want to let you know that you are not alone, you are not less than, and that it is possible to live a meaningful and fulfilled life without children.
-
-
-      I can’t have children and have not only come to accept a childless life, I’ve learnt how to be happy childless. To help you on this journey, I have created the **Thrive Coaching** program, a unique, personalised programme which integrates coaching with yoga. It’s a holistic approach that recognises the mind-body connection, to help you create a new picture of the future.
-
-
-      I also work to promote **inclusivity** of childlessnesswithin society, including within the media and the workplace, to raise awareness of the unconscious bias and narrative that may lead to childless people feeling invisible and stripped of their self-worth and role.
-    type: Text only
   - type: Image on left - Text on right
     image: /img/adobestock_232441971.jpeg
     text: dfg sdgs dg sdg sdfg
@@ -32,9 +19,6 @@ sections:
     type: Image on right - Text on left
     image: /img/adobestock_232441971.jpeg
     text: asdf daf sdf asf fd
-  - image: /img/adobestock_232441971.jpeg
-    text: ""
-    type: Image only
 footerobjects: []
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn

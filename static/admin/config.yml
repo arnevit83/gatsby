@@ -62,19 +62,8 @@ collections:
                         { label: "Text only", value: "Text only" },
                       ],
                   },
-                  {
-                    label: Image,
-                    name: image,
-                    widget: image,
-                    default: "/img/default.png",
-                  },
-                  {
-                    label: Text,
-                    name: text,
-                    widget: markdown,
-                    default: " ",
-                    required: false,
-                  },
+                  { label: Image, name: image, widget: image },
+                  { label: Text, name: text, widget: markdown },
                 ],
             }
           - {
