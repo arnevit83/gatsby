@@ -22,12 +22,12 @@ module.exports = {
         }
         `,
 				resolveSiteUrl: ({ site, allSitePage }) => {
-					return config.siteUrl;
+					return config.siteURL;
 				},
 				serialize: ({ site, allSitePage }) =>
 					allSitePage.nodes.map((node) => {
 						return {
-							url: config.siteUrl + node.path,
+							url: config.siteURL + node.path,
 							changefreq: `daily`,
 							priority: 0.7,
 						};
@@ -42,7 +42,7 @@ module.exports = {
 			options: {
 				name: config.siteTitle,
 				short_name: config.siteTitleShort,
-				start_url: config.siteUrl,
+				start_url: config.siteURL,
 				background_color: config.backgroundColor,
 				theme_color: config.themeColor,
 				display: "minimal-ui",
@@ -183,8 +183,8 @@ module.exports = {
 								return Object.assign({}, edge.node.frontmatter, {
 									description: edge.node.excerpt,
 									date: edge.node.frontmatter.date,
-									url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-									guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+									url: site.siteMetadata.siteURL + edge.node.fields.slug,
+									guid: site.siteMetadata.siteURL + edge.node.fields.slug,
 									custom_elements: [{ "content:encoded": edge.node.html }],
 								});
 							});
