@@ -13,7 +13,7 @@ headerobject:
 sections:
   - type: Image on left - Text on right
     image: /img/adobestock_232441971.jpeg
-    text: asdf
+    text: "**asdf**"
     name: asdfasdf
   - name: asdfasdf
     type: Image on right - Text on left
