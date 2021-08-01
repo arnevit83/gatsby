@@ -7,10 +7,10 @@ class RightAlignImage extends React.Component {
 	render() {
 		return (
 			<Row>
-				<Col className="mx-auto">
+				<Col md="6">
 					<p>{this.props.text}</p>
 				</Col>
-				<Col className="mx-auto">
+				<Col md="6">
 					<PreviewCompatibleImage imageInfo={this.props} />
 				</Col>
 			</Row>

@@ -24,19 +24,22 @@ export const IndexPageTemplate = ({
 		<>
 			<HeaderSEO key={headerobject.text} {...headerobject}></HeaderSEO>
 			<section className="upper">
-				<Container fluid={true}>
+				<Container fluid="true">
 					<Row>
 						<Col className="mx-auto" md="10">
 							<Card className="card-invoice">
 								<CardBody>
-									<PageContent className="content" content={content} />
-
-									{sections.map((section, index) => (
-										<CustomWidget
-											key={index.toString()}
-											{...section}
-										></CustomWidget>
-									))}
+									<Container fluid={true}>
+										{content !== "" && (
+											<PageContent className="content" content={content} />
+										)}
+										{sections.map((section, index) => (
+											<CustomWidget
+												key={index.toString()}
+												{...section}
+											></CustomWidget>
+										))}{" "}
+									</Container>
 								</CardBody>
 							</Card>
 						</Col>
@@ -67,8 +70,6 @@ const IndexPage = ({ data }) => {
 				contentComponent={HTMLContent}
 				content={post.html}
 				image={frontmatter.image}
-				heading={frontmatter.heading}
-				subheading={frontmatter.subheading}
 				headerobject={frontmatter.headerobject}
 				//  footerobject={frontmatter.footerobject}
 				sections={frontmatter.sections}

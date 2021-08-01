@@ -1,19 +1,31 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import { Row, Col } from "reactstrap";
 
 export const HTMLContent = ({ content, className }) => (
-  <div className={className} dangerouslySetInnerHTML={{ __html: content }} />
-)
+	<Row xs="1" md="2">
+		<Col>
+			<div
+				className={className}
+				dangerouslySetInnerHTML={{ __html: content }}
+			/>
+		</Col>
+	</Row>
+);
 
 const Content = ({ content, className }) => (
-  <div className={className}>{content}</div>
-)
+	<Row xs="1" md="2">
+		<Col className="mx-auto">
+			<div className={className}>{content}</div>
+		</Col>
+	</Row>
+);
 
 Content.propTypes = {
-  content: PropTypes.node,
-  className: PropTypes.string,
-}
+	content: PropTypes.node,
+	className: PropTypes.string,
+};
 
-HTMLContent.propTypes = Content.propTypes
+HTMLContent.propTypes = Content.propTypes;
 
-export default Content
+export default Content;

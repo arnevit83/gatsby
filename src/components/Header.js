@@ -15,11 +15,7 @@ import {
 	Col,
 } from "reactstrap";
 
-// NavLink,
-// DropdownMenu,
-// DropdownItem,
-// UncontrolledDropdown,
-// DropdownToggle,
+var config = require("../../src/settings/SiteConfig");
 
 function Header(props) {
 	React.useEffect(() => {
@@ -64,8 +60,8 @@ function Header(props) {
 			>
 				<Container>
 					<NavbarBrand className="mr-lg-5" to="/" tag={Link}>
-						<img src={logo} alt="{Yoga Logo}" style={{ width: "88px" }} /> Yoga
-						Studio Name
+						<img src={logo} alt="lgo" style={{ width: "88px" }} />
+						{config.siteTitle}
 					</NavbarBrand>
 					<button
 						className="navbar-toggler"
@@ -84,7 +80,7 @@ function Header(props) {
 							<Row>
 								<Col className="collapse-brand" xs="6">
 									<Link to="/">
-										<img alt="..." src={logo}></img>
+										<img alt="logo" src={logo}></img>
 									</Link>
 								</Col>
 								<Col className="collapse-close" xs="6">
@@ -103,6 +99,9 @@ function Header(props) {
 							navbar
 						>
 							<div className="mx-auto navbar-nav">
+								<Link className="nav-link" to="/">
+									Home
+								</Link>
 								<Link className="nav-link" to="/blog">
 									Blog
 								</Link>

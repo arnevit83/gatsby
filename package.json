@@ -40,11 +40,11 @@
 		"node-sass": "^4.14.0",
 		"nouislider": "14.6.0",
 		"prop-types": "^15.6.0",
-		"react": "^16.8.4",
-		"react-dom": "^16.8.4",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
 		"react-google-maps": "9.4.5",
 		"react-helmet": "^6.1.0",
-		"reactstrap": "8.5.1",
+		"reactstrap": "^8.5.1",
 		"uuid": "^7.0.0"
 	},
 	"keywords": [
@@ -61,7 +61,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"devDependencies": {
-		"bootstrap": "4.0.0-alpha.6",
+		"bootstrap": "^4.0.0-alpha.6",
 		"prettier": "^2.0.5"
 	},
 	"optionalDependencies": {

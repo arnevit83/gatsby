@@ -8,12 +8,8 @@ import GlobalStyles from "./GlobalStyles";
 import { withPrefix } from "gatsby";
 
 // Theme
-import "../assets/css/nucleo-svg.css";
-import "../assets/css/nucleo-icons.css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
-import "../assets/scss/argon-design-system.scss?v1.0.0";
-import "./all.sass";
 
+//.row-cols-2
 // Core Components
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
@@ -103,6 +99,7 @@ const TemplateWrapper = ({ children }) => {
 			<GlobalStyles />
 
 			<Header type={menutype} />
+
 			<div className="wrapper">
 				<div className="section-shaped my-0 skew-separator skew-mini">
 					<div className="page-header page-header-small header-filter ">
