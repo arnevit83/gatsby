@@ -11,6 +11,9 @@ class SEOcontent extends React.Component {
 					<meta name="og:title" content={this.props.title} />
 				)}
 				{this.props.title !== "" && (
+					<meta property="og:title" content={this.props.title} />
+				)}
+				{this.props.title !== "" && (
 					<meta itemprop="name" content={this.props.title} />
 				)}
 				{this.props.title !== "" && (
