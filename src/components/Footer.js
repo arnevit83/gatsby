@@ -36,7 +36,7 @@ function Footer() {
 						<Col md="6">
 							<div className="copyright">
 								{config.copyright}&nbsp;Website created by{" "}
-								<a href="https://cms.sparklingpeach.co.uk" target="_blank">
+								<a href="https://duncanpeach.com" target="_blank">
 									SparklingPeach
 								</a>
 							</div>

@@ -6,11 +6,11 @@ import { Row, Col } from "reactstrap";
 class LeftAlignImage extends React.Component {
 	render() {
 		return (
-			<Row>
-				<Col md="6">
+			<Row className="row">
+				<Col className="col" md="6">
 					<PreviewCompatibleImage imageInfo={this.props} />
 				</Col>
-				<Col md="6">
+				<Col className="col" md="6">
 					<p>{this.props.text}</p>
 				</Col>
 			</Row>

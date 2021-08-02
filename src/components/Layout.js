@@ -13,7 +13,6 @@ import { withPrefix } from "gatsby";
 // Core Components
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
-import { Container } from "reactstrap";
 
 const TemplateWrapper = ({ children }) => {
 	const { title, description, siteURL } = useSiteMetadata();
@@ -122,7 +121,6 @@ const TemplateWrapper = ({ children }) => {
 								}}
 							></div>
 						</div>
-						<Container></Container>
 					</div>
 				</div>
 

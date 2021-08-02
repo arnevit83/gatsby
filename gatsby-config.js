@@ -1,6 +1,11 @@
 const config = require("./src/settings/SiteConfig");
 
 module.exports = {
+	flags: {
+		PRESERVE_FILE_DOWNLOAD_CACHE: true,
+		PRESERVE_WEBPACK_CACHE: true,
+		FAST_DEV: true,
+	},
 	siteMetadata: {
 		title: config.siteTitle,
 		description: config.siteDescription,
@@ -132,7 +137,7 @@ module.exports = {
 				purgeOnly: ["/bootstrap.sass"], // applies purging only on the bulma css file
 			},
 		}, // must be after other CSS plugins
-		"gatsby-plugin-netlify", // make sure to keep it last in the array
+
 		"gatsby-plugin-catch-links",
 		{
 			resolve: `gatsby-plugin-google-gtag`,
@@ -231,5 +236,6 @@ module.exports = {
 				showSpinner: false,
 			},
 		},
+		"gatsby-plugin-netlify", // make sure to keep it last in the array
 	],
 };

@@ -1,7 +1,8 @@
 import CMS from "netlify-cms-app";
+
 //import uploadcare from "netlify-cms-media-library-uploadcare";
 //import cloudinary from "netlify-cms-media-library-c";
-
+//
 //import AboutPagePreview from "./preview-templates/AboutPagePreview";
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
 //import ProductPagePreview from "./preview-templates/ProductPagePreview";
