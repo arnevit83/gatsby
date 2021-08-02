@@ -10,10 +10,7 @@ headerobject:
     not less than, and that it is possible to live a meaningful and fulfilled
     life without children. "
   headerstyle: center
-sections:
-  - type: Image on left - Text on right
-    image: /img/adobestock_232441971.jpeg
-    text: sdfgsdfgsd
+sections: []
 footerobjects: []
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn

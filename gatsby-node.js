@@ -89,9 +89,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 exports.createSchemaCustomization = ({ actions }) => {
 	const { createTypes } = actions;
 
-	createTypes(`
-	  type SchemaExample implements Node {
-		  image: String
+	createTypes(
+		`
+	type MarkdownRemark implements Node {
+		frontmatter: Frontmatter
 	  }
-	`);
+	  type Sections {
+		text: String
+		image: File! @fileByRelativePath
+		type: String
+	  }
+	  type Frontmatter @infer {
+		sections: [Sections]	  
+	  }	  
+	`
+	);
 };
