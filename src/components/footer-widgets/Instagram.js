@@ -1,21 +1,20 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, StaticQuery } from "gatsby";
 import PropTypes from "prop-types";
 import { Row, Col } from "reactstrap";
 
-export const Instagram = ({ data }) => {
-	const Posts = data;
-	debugger;
-	const postLinks = Posts.map((post) => <div>{post.node.id}</div>);
-
-	return (
+class Instagram extends React.Component{
+	render() {
+	  debugger;
+	  const { data } = this.props
+	  const Posts = data;
+	  const postLinks = Posts.map((post) => <div>{post.node.id}</div>);
+	  return (
 		<Row>
 			<Col className="mx-auto">{postLinks}</Col>
 		</Row>
-	);
-};
-
-export default Instagram;
+		)
+}}
 
 Instagram.propTypes = {
 	data: PropTypes.shape({
@@ -25,8 +24,13 @@ Instagram.propTypes = {
 	}),
 };
 
-export const pageQuery = graphql`
-	{
+
+
+export default () => (
+	<StaticQuery
+	  query={graphql`
+
+	  {
 		allInstaNode {
 			edges {
 				node {
@@ -46,4 +50,7 @@ export const pageQuery = graphql`
 			}
 		}
 	}
-`;
+	  `}
+	  render={(data) => <Instagram data={data} />}
+	/>
+  )
