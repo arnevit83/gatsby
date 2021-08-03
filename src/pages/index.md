@@ -10,12 +10,10 @@ headerobject:
     not less than, and that it is possible to live a meaningful and fulfilled
     life without children. "
   headerstyle: center
-sections:
-  - text: dfgsgdfg
-    type: Text only
-  - type: Image only
-    image: /img/adobestock_232441971.jpeg
-footerobjects: []
+sections: []
+footerobjects:
+  - footerstyle: Blog
+  - footerstyle: Instagram
 image: /img/header.jpg
 description: Kaldi is the ultimate spot for coffee lovers who want to learn
   about their java’s origin and support the farmers that grew it. We take coffee
