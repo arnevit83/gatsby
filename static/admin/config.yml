@@ -62,8 +62,8 @@ collections:
                         { label: "Text only", value: "Text only" },
                       ],
                   },
-                  { label: Image, name: image, widget: image },
-                  { label: Text, name: text, widget: text },
+                  { label: Image, name: image, widget: image, required: false },
+                  { label: Text, name: text, widget: text, required: false },
                 ],
             }
           - {
@@ -73,22 +73,12 @@ collections:
               collapsed: true,
               fields:
                 [
-                  { label: name, name: name, widget: string },
                   {
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options:
-                      [
-                        "Blog",
-                        "Instagram",
-                        "Email Signup",
-                        "Link",
-                        "File Download",
-                      ],
+                    options: ["Blog", "Instagram"],
                   },
-                  { label: footerstylelink, name: footerlink, widget: string },
-                  { label: footerstylefile, name: footerfile, widget: file },
                 ],
             }
 

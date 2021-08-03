@@ -7,7 +7,7 @@ import Layout from "../components/Layout";
 
 import CustomWidget from "../components/custom-widgets/CustomWidget";
 import HeaderSEO from "../components/header-widgets/SEOcontent";
-//import FooterWidget from "../components/footer-widgets/FooterWidget";
+import FooterWidget from "../components/footer-widgets/FooterWidget";
 import Content, { HTMLContent } from "../components/Content";
 
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
@@ -17,7 +17,7 @@ export const IndexPageTemplate = ({
 	sections,
 	content,
 	contentComponent,
-	// footerobject
+	footerobjects,
 }) => {
 	const PageContent = contentComponent || Content;
 	return (
@@ -38,7 +38,13 @@ export const IndexPageTemplate = ({
 												key={index.toString()}
 												{...section}
 											></CustomWidget>
-										))}{" "}
+										))}
+										{footerobjects.map((Footersection, index) => (
+											<FooterWidget
+												key={index.toString()}
+												{...Footersection}
+											></FooterWidget>
+										))}
 									</Container>
 								</CardBody>
 							</Card>
@@ -55,7 +61,7 @@ IndexPageTemplate.propTypes = {
 	heading: PropTypes.string,
 	subheading: PropTypes.string,
 	headerobject: PropTypes.object,
-	//  footerobject: PropTypes.object,
+	footerobjects: PropTypes.array,
 	sections: PropTypes.array,
 	contentComponent: PropTypes.func,
 };
@@ -71,7 +77,7 @@ const IndexPage = ({ data }) => {
 				content={post.html}
 				image={frontmatter.image}
 				headerobject={frontmatter.headerobject}
-				//  footerobject={frontmatter.footerobject}
+				footerobjects={frontmatter.footerobjects}
 				sections={frontmatter.sections}
 			/>
 		</Layout>
@@ -90,12 +96,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
 	query IndexPageTemplate {
-		markdownRemark(
-			frontmatter: {
-				templateKey: { eq: "index-page" }
-				sections: { elemMatch: {} }
-			}
-		) {
+		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			html
 			frontmatter {
 				headerobject {
@@ -112,6 +113,9 @@ export const pageQuery = graphql`
 							}
 						}
 					}
+				}
+				footerobjects {
+					footerstyle
 				}
 			}
 		}

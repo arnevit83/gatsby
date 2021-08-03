@@ -96,11 +96,16 @@ exports.createSchemaCustomization = ({ actions }) => {
 	  }
 	  type Sections {
 		text: String
-		image: File! @fileByRelativePath
+		image: File @fileByRelativePath
 		type: String
 	  }
+	  type Footerobjects {
+		footerstyle: String
+	  }
+
 	  type Frontmatter @infer {
 		sections: [Sections]	  
+		footerobjects: [Footerobjects]	  
 	  }	  
 	`
 	);

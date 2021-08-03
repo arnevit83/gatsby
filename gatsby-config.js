@@ -13,6 +13,12 @@ module.exports = {
 	},
 	plugins: [
 		{
+			resolve: `gatsby-source-instagram`,
+			options: {
+				username: config.InstagramID,
+			},
+		},
+		{
 			resolve: `gatsby-plugin-sitemap`,
 			options: {
 				output: config.siteMap,
