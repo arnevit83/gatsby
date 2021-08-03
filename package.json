@@ -45,7 +45,9 @@
 		"react-dom": "^16.14.0",
 		"react-google-maps": "9.4.5",
 		"react-helmet": "^6.1.0",
+		"react-slick": "^0.28.1",
 		"reactstrap": "^8.5.1",
+		"slick-carousel": "^1.8.1",
 		"uuid": "^7.0.0"
 	},
 	"keywords": [

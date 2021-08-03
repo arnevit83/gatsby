@@ -1,27 +1,24 @@
-import { graphql, useStaticQuery } from 'gatsby'
-
-
+import { graphql, useStaticQuery } from "gatsby";
 
 const GetFooterSettings = () => {
-  const { markdownRemark } = useStaticQuery(
-    graphql`
-    query SITEFOOTER_SETTINGS {
-      markdownRemark(frontmatter: {templateKey: {eq: "footersettings"}}) {
-        id
-        frontmatter {
-          footertitle
-          footerdesc
-          twitter
-          facebook
-          ig
-        }
-      }
-    }
-    `
-  )
+	const { markdownRemark } = useStaticQuery(
+		graphql`
+			query SITEFOOTER_SETTINGS {
+				markdownRemark(frontmatter: { templateKey: { eq: "footersettings" } }) {
+					id
+					frontmatter {
+						footertitle
+						footerdesc
+						twitter
+						facebook
+						ig
+					}
+				}
+			}
+		`
+	);
 
-  return markdownRemark.frontmatter
-}
+	return markdownRemark.frontmatter;
+};
 
-
-export default GetFooterSettings
+export default GetFooterSettings;
