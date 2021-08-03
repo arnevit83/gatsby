@@ -15,7 +15,9 @@ module.exports = {
 		{
 			resolve: `gatsby-source-instagram`,
 			options: {
-				username: config.InstagramID,
+				username: config.InstagramUserName,
+				access_token: config.InstagramToken,
+				instagram_id: config.InstagramID,
 			},
 		},
 		{
