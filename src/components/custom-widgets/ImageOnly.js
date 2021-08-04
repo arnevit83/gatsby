@@ -1,17 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../PreviewCompatibleImage";
-import { Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
 
 class ImageOnly extends React.Component {
 	render() {
 		return (
-			<Row>
-				<Col className="mx-auto">
-					<PreviewCompatibleImage imageInfo={this.props} />
-					<p className="text-center">{this.props.text}</p>
-				</Col>
-			</Row>
+			<Col className="mx-auto">
+				<PreviewCompatibleImage imageInfo={this.props} />
+				<p className="text-center">{this.props.text}</p>
+			</Col>
 		);
 	}
 }

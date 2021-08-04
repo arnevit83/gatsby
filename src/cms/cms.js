@@ -3,10 +3,10 @@ import CMS from "netlify-cms-app";
 //import uploadcare from "netlify-cms-media-library-uploadcare";
 //import cloudinary from "netlify-cms-media-library-c";
 //
-//import AboutPagePreview from "./preview-templates/AboutPagePreview";
+
 import BlogPostPreview from "./preview-templates/BlogPostPreview";
-//import ProductPagePreview from "./preview-templates/ProductPagePreview";
 import IndexPagePreview from "./preview-templates/IndexPagePreview";
+
 //import ServicesPagePreview from "./preview-templates/ServicesPagePreview";
 //import YoutubePreview from "./preview-templates/YoutubePreview";
 
@@ -22,9 +22,9 @@ import IndexPagePreview from "./preview-templates/IndexPagePreview";
 //CMS.registerPreviewTemplate(Yo utubePreview);
 
 //CMS.registerEditorComponent("ImageOnly", CustomWidget);
-
-CMS.registerPreviewTemplate("index", IndexPagePreview);
-//CMS.registerPreviewTemplate("about", AboutPagePreview);
-//CMS.registerPreviewTemplate("products", ProductPagePreview);
 CMS.registerPreviewTemplate("blog", BlogPostPreview);
-//CMS.registerPreviewTemplate("services", ServicesPagePreview);
+CMS.registerPreviewTemplate("index", IndexPagePreview);
+CMS.registerPreviewTemplate("about", IndexPagePreview);
+CMS.registerPreviewTemplate("thrive", IndexPagePreview);
+CMS.registerPreviewTemplate("inclusivity", IndexPagePreview);
+CMS.registerPreviewTemplate("events", IndexPagePreview);

@@ -34,18 +34,36 @@ function Footer() {
 					<hr></hr>
 					<Row className="align-items-center justify-content-md-between">
 						<Col md="6">
-							<div className="copyright">
+							<sub className="">
 								{config.copyright}&nbsp;Website created by{" "}
 								<a href="https://duncanpeach.com" target="_blank">
 									SparklingPeach
 								</a>
-							</div>
+							</sub>
 						</Col>
 						<Col md="6">
 							<ul className="nav justify-content-center">
 								<li className="nav-item">
+									<Link className="nav-link" to="/thrive">
+										Thrive Coaching
+									</Link>
+									<Link className="nav-link" to="/inclusivity">
+										Inclusivity
+									</Link>{" "}
+									<Link className="nav-link" to="/events">
+										Events
+									</Link>
+								</li>
+
+								<li className="nav-item">
 									<Link className="nav-link" to="/contact">
 										Contact
+									</Link>
+									<Link className="nav-link" to="/about">
+										About Me
+									</Link>
+									<Link className="nav-link" to="/blog">
+										Blog
 									</Link>
 								</li>
 							</ul>

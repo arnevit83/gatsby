@@ -113,14 +113,16 @@ a {
 	.col-xl-auto {
 		padding: 30px;
 	}
-}
-
-.row:nth-child(2n) {
-	background-color: #f3f3f3;
-}
-
-.row {
-	margin: 0px;
+	.Coloured-Row {
+		margin: 0 -15px;
+		&:nth-child(2n -1) {
+			background-color: #608fc9;
+			background-size: 200% 240%;
+			background: #608fc9;
+			background: radial-gradient(ellipse at center, #96b7e0 0, #608fc9 100%);
+			color: white;
+		}
+	}
 }
 
 .col {
@@ -136,7 +138,7 @@ p {
 }
 
 .navbar-collapse {
-	padding: 0.5rem !important;
+	padding: 1rem !important;
 }
 .navbar .navbar-brand {
 	margin-top: 0px !important;
@@ -187,6 +189,36 @@ p {
 .tile {
 	padding: 10px;
 }
+.butterfly-container {
+	margin: 0 auto;
+	.butterfly {
+		display: inline-block;
+		width: 100%;
+		.title {
+			margin-top: 30px;
+			min-height: 32px;
+			img {
+				position: relative;
+				top: -25px;
+				right: 10px;
+			}
+		}
+	}
+}
+.ImgFix {
+	img {
+		width: 100%;
+	}
+}
+.card {
+	margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+	.navbar {
+		padding: 0px;
+	}
+}
 
 @media (min-width: 576px) {
 	.container {
@@ -197,4 +229,23 @@ p {
 	.overtext {
 		display: none;
 	}
+}
+.taglist {
+	td {
+		padding: 3px 6px;
+		i {
+			top: 4px;
+			position: relative;
+		}
+	}
+}
+.CardBody {
+	min-height: 800px;
+}
+
+.card-invoice form {
+	padding: 40px;
+}
+.footer {
+	padding: 40px;
 }

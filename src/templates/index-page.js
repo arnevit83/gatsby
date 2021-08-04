@@ -7,6 +7,8 @@ import Layout from "../components/Layout";
 
 import CustomWidget from "../components/custom-widgets/CustomWidget";
 import HeaderSEO from "../components/header-widgets/SEOcontent";
+import TitleWidget from "../components/header-widgets/TitleWidget";
+
 import FooterWidget from "../components/footer-widgets/FooterWidget";
 import Content, { HTMLContent } from "../components/Content";
 
@@ -18,18 +20,21 @@ export const IndexPageTemplate = ({
 	content,
 	contentComponent,
 	footerobjects,
+	pagetitle,
 }) => {
 	const PageContent = contentComponent || Content;
 	return (
 		<>
 			<HeaderSEO key={headerobject.text} {...headerobject}></HeaderSEO>
 			<section className="upper">
-				<Container fluid="true">
+				<Container fluid={true}>
 					<Row>
 						<Col className="mx-auto" md="10">
 							<Card className="card-invoice">
 								<CardBody>
-									<Container fluid={true}>
+									<Container>
+										{pagetitle && <TitleWidget title={pagetitle}></TitleWidget>}
+
 										{content !== "" && (
 											<PageContent className="content" content={content} />
 										)}
@@ -62,6 +67,7 @@ IndexPageTemplate.propTypes = {
 	subheading: PropTypes.string,
 	headerobject: PropTypes.object,
 	footerobjects: PropTypes.array,
+	pagetitle: PropTypes.string,
 	sections: PropTypes.array,
 	contentComponent: PropTypes.func,
 };
@@ -79,6 +85,7 @@ const IndexPage = ({ data }) => {
 				headerobject={frontmatter.headerobject}
 				footerobjects={frontmatter.footerobjects}
 				sections={frontmatter.sections}
+				pagetitle={frontmatter.pagetitle}
 			/>
 		</Layout>
 	);
@@ -103,6 +110,7 @@ export const pageQuery = graphql`
 					title
 					description
 				}
+				pagetitle
 				sections {
 					type
 					text

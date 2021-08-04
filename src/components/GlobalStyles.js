@@ -5,7 +5,7 @@ import { graphql, StaticQuery } from "gatsby";
 class GlobalStyles extends React.Component {
 	render() {
 		const data = this.props.data.markdownRemark.frontmatter;
-		var style = `:root { --default: ${data.colordefault}; --primary: ${data.colorprimary}; --secondary: ${data.colorsecondary}; --font-family-sans: ${data.font}; --font-family-alt: ${data.fontalt};}`;
+		var style = `:root { --default: ${data.colordefault}; --primary: ${data.colorprimary}; --secondary: ${data.colorsecondary}; --font-family-sans: ${data.font}; --font-family-alt: ${data.fontalt};} a {color: ${data.colorprimary}} a:hover{color: ${data.colorprimary}!important; };`;
 		var stylesheet = "";
 
 		if (data.font === data.fontalt) {

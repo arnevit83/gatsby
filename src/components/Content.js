@@ -14,7 +14,7 @@ export const HTMLContent = ({ content, className }) => (
 );
 
 const Content = ({ content, className }) => (
-	<Row xs="1" md="2">
+	<Row xs="1" md="2" className="Coloured-Row">
 		<Col className="mx-auto">
 			<div className={className}>{content}</div>
 		</Col>

@@ -15,31 +15,16 @@ export default class BlogIndexPage extends React.Component {
 							<Col className="mx-auto" md="10">
 								<Card className="card-invoice">
 									<CardBody>
-										<Row>
-											<Col xs="12">
-												<div
-													className="full-width-image-container margin-top-0"
-													style={{
-														backgroundImage: `url('/img/blog-index.jpg')`,
-													}}>
-													<h1
-														className="has-text-weight-bold is-size-1"
-														style={{
-															color: "white",
-															padding: "1rem",
-														}}>
-														Latest Stories
-													</h1>
-												</div>
-												<section className="section">
-													<div className="container">
-														<div className="content">
-															<BlogRoll />
-														</div>
-													</div>
-												</section>
-											</Col>
-										</Row>
+										<div className="butterfly-container">
+											<span className="butterfly">
+												<h1 className="text-center title">
+													Latest Stories
+													<img alt="butterfly" src="/img/ButterFlyy.svg"></img>
+												</h1>
+											</span>
+											<hr />
+										</div>
+										<BlogRoll />
 									</CardBody>
 								</Card>
 							</Col>

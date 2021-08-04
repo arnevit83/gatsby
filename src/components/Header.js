@@ -102,10 +102,22 @@ function Header(props) {
 								<Link className="nav-link" to="/">
 									Home
 								</Link>
+								<Link className="nav-link" to="/about">
+									About Me
+								</Link>
+								<Link className="nav-link" to="/thrive">
+									Thrive Coaching
+								</Link>
+								<Link className="nav-link" to="/inclusivity">
+									Inclusivity
+								</Link>
+								<Link className="nav-link" to="/events">
+									Events
+								</Link>
+
 								<Link className="nav-link" to="/blog">
 									Blog
 								</Link>
-
 								<Link className="nav-link" to="/contact">
 									Contact
 								</Link>

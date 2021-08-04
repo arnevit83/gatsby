@@ -5,22 +5,40 @@ import RightAlignImage from "./RightAlignImage";
 import ImageOnly from "./ImageOnly";
 import TextOnly from "./TextOnly";
 
+import { Row } from "reactstrap";
+
 export class CustomWidget extends React.Component {
 	getWidgetPicker(widget) {
 		if (widget.type === "Image on left - Text on right") {
-			return <LeftAlignImage {...widget} />;
+			return (
+				<Row className="Coloured-Row">
+					<LeftAlignImage {...widget} />
+				</Row>
+			);
 		}
 
 		if (widget.type === "Image only") {
-			return <ImageOnly {...widget} />;
+			return (
+				<Row className="Coloured-Row">
+					<ImageOnly {...widget} />
+				</Row>
+			);
 		}
 
 		if (widget.type === "Image on right - Text on left") {
-			return <RightAlignImage {...widget} />;
+			return (
+				<Row className="Coloured-Row">
+					<RightAlignImage {...widget} />
+				</Row>
+			);
 		}
 
 		if (widget.type === "Text only") {
-			return <TextOnly {...widget} />;
+			return (
+				<Row className="Coloured-Row">
+					<TextOnly {...widget} />
+				</Row>
+			);
 		}
 
 		return null;

@@ -28,34 +28,49 @@ export const BlogPostTemplate = ({
 								<CardBody>
 									<Row>
 										<Col xs="12">
-											<section className="section">
-												{helmet || ""}
-												<div className=" ">
-													<div className="column is-12">
-														<div className=" is-12">
-															<h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-																{title}
-															</h1>
-															<p>{description}</p>
-															<PostContent content={content} />
-															{tags && tags.length ? (
-																<div style={{ marginTop: `4rem` }}>
-																	<h4>Tags</h4>
-																	<ul className="taglist">
-																		{tags.map((tag) => (
-																			<li key={tag + `tag`}>
-																				<Link to={`/tags/${kebabCase(tag)}/`}>
-																					{tag}
-																				</Link>
-																			</li>
-																		))}
-																	</ul>
-																</div>
-															) : null}
+											{helmet || ""}
+
+											<div className="butterfly-container">
+												<span className="butterfly">
+													<h1 className="text-center title">
+														{title}
+														<img
+															alt="butterfly"
+															src="/img/ButterFlyy.svg"
+														></img>
+													</h1>
+												</span>
+												<hr />
+											</div>
+											<Row>
+												<Col md="10">
+													<p>{description}</p>
+
+													<PostContent className="ImgFix" content={content} />
+												</Col>
+												<Col md="2">
+													{tags && tags.length ? (
+														<div>
+															<h4>Tags</h4>
+															<br />
+															<table className="taglist">
+																{tags.map((tag) => (
+																	<tr>
+																		<td>
+																			<i className="ni ni-tag"></i>
+																		</td>
+																		<td key={tag + `tag`}>
+																			<Link to={`/tags/${kebabCase(tag)}/`}>
+																				{tag}
+																			</Link>
+																		</td>
+																	</tr>
+																))}
+															</table>
 														</div>
-													</div>
-												</div>
-											</section>
+													) : null}
+												</Col>
+											</Row>
 										</Col>
 									</Row>
 								</CardBody>

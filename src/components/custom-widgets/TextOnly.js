@@ -1,15 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
 
 class TextOnly extends React.Component {
 	render() {
 		return (
-			<Row>
-				<Col className="mx-auto">
-					<p>{this.props.text}</p>
-				</Col>
-			</Row>
+			<Col className="mx-auto">
+				<p>{this.props.text}</p>
+			</Col>
 		);
 	}
 }

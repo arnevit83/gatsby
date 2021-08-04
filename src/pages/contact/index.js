@@ -50,13 +50,20 @@ export default class Index extends React.Component {
 										<div className="container">
 											<div className="row ">
 												<div className="col text-center">
-													<br />
-													<h1 className="m-4">Got a Question?</h1>
-													<p>We'd like to talk more about what you need.</p>
+													<div className="butterfly-container">
+														<span className="butterfly">
+															<h1 className="text-center title">
+																Got a Question?{" "}
+																<img
+																	alt="butterfly"
+																	src="/img/ButterFlyy.svg"
+																></img>
+															</h1>
+														</span>
+													</div>
 												</div>
-												<br />
-												<br />
-												<hr></hr>
+
+												<hr />
 											</div>
 											<div className="row m-3 align-items-center justify-content-md-center">
 												<div className="col col-lg-2 text-center">
@@ -77,117 +84,119 @@ export default class Index extends React.Component {
 										<CardBody>
 											<Row>
 												<Col xs="12">
-													<section className="section">
-														<div className="container-fluid">
-															<div className="row">
-																<div className="col">
-																	<Card className="card-invoice">
-																		<CardBody>
-																			<form
-																				name="contact"
-																				method="post"
-																				action="/contact/thanks/"
-																				data-netlify="true"
-																				onSubmit={this.handleSubmit}
-																			>
-																				{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-
-																				<div className="form-group input-group">
-																					<div className="input-group-prepend">
-																						<span
-																							htmlFor={"name"}
-																							for={"name"}
-																							className="input-group-text"
-																						>
-																							<i className="ni ni-circle-08"></i>
-																						</span>
-																					</div>{" "}
-																					<input
-																						aria-describedby="addon-right addon-left"
-																						placeholder="Your Name"
-																						className="form-control"
-																						type="text"
-																						name={"name"}
-																						onChange={this.handleChange}
-																						id={"name"}
-																						required={true}
-																					/>{" "}
-																				</div>
-
-																				<div className="form-group input-group">
-																					<div className="input-group-prepend">
-																						<span
-																							for={"email"}
-																							htmlFor={"email"}
-																							className="input-group-text"
-																						>
-																							<i className="ni ni-email-83"></i>
-																						</span>
-																					</div>{" "}
-																					<input
-																						aria-describedby="addon-right addon-left"
-																						placeholder="Your Email"
-																						className="form-control"
-																						type="text"
-																						name={"email"}
-																						onChange={this.handleChange}
-																						id={"email"}
-																						required={true}
-																					/>{" "}
-																				</div>
-																				<div className="form-group input-group">
-																					<div className="input-group-prepend">
-																						<span
-																							for={"message"}
-																							htmlFor={"message"}
-																							className={
-																								styles.inputgrouptextdisable +
-																								" input-group-text"
-																							}
-																						>
-																							<i className="ni ni-single-copy-04"></i>
-																						</span>
-																					</div>{" "}
-																					<textarea
-																						aria-describedby="addon-right addon-left"
-																						placeholder="Your Message"
-																						className={
-																							styles.TextboxHeight +
-																							" form-control"
-																						}
-																						type="text"
-																						name={"message"}
-																						onChange={this.handleChange}
-																						id={"message"}
-																						required={true}
-																					/>{" "}
-																				</div>
-
-																				<div className="col pr-0 align-self-end">
-																					<button
-																						disabled={this.state.loading}
-																						className="btn  float-right  btn-primary align-self-end"
-																						type="submit"
+													<div className="container-fluid">
+														<div className="row">
+															<Col className="mx-auto" xs="8">
+																<Card className="card-invoice">
+																	<CardBody>
+																		<form
+																			name="contact"
+																			method="post"
+																			action="/contact/thanks/"
+																			data-netlify="true"
+																			onSubmit={this.handleSubmit}
+																		>
+																			{/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+																			<p>
+																				We'd like to talk more about what you
+																				need.
+																			</p>
+																			<br />
+																			<div className="form-group input-group">
+																				<div className="input-group-prepend">
+																					<span
+																						htmlFor={"name"}
+																						for={"name"}
+																						className="input-group-text"
 																					>
-																						<i
-																							class={
-																								!this.state.loading
-																									? "ni ni-send"
-																									: "ni ni-settings-gear-65 spin"
-																							}
-																						></i>{" "}
-																						{!this.state.loading
-																							? "Send"
-																							: "Submitting"}
-																					</button>
-																				</div>
-																			</form>
-																		</CardBody>
-																	</Card>
-																</div>
-															</div>
+																						<i className="ni ni-circle-08"></i>
+																					</span>
+																				</div>{" "}
+																				<input
+																					aria-describedby="addon-right addon-left"
+																					placeholder="Your Name"
+																					className="form-control"
+																					type="text"
+																					name={"name"}
+																					onChange={this.handleChange}
+																					id={"name"}
+																					required={true}
+																				/>{" "}
+																			</div>
+
+																			<div className="form-group input-group">
+																				<div className="input-group-prepend">
+																					<span
+																						for={"email"}
+																						htmlFor={"email"}
+																						className="input-group-text"
+																					>
+																						<i className="ni ni-email-83"></i>
+																					</span>
+																				</div>{" "}
+																				<input
+																					aria-describedby="addon-right addon-left"
+																					placeholder="Your Email"
+																					className="form-control"
+																					type="text"
+																					name={"email"}
+																					onChange={this.handleChange}
+																					id={"email"}
+																					required={true}
+																				/>{" "}
+																			</div>
+																			<div className="form-group input-group">
+																				<div className="input-group-prepend">
+																					<span
+																						for={"message"}
+																						htmlFor={"message"}
+																						className={
+																							styles.inputgrouptextdisable +
+																							" input-group-text"
+																						}
+																					>
+																						<i className="ni ni-single-copy-04"></i>
+																					</span>
+																				</div>{" "}
+																				<textarea
+																					aria-describedby="addon-right addon-left"
+																					placeholder="Your Message"
+																					className={
+																						styles.TextboxHeight +
+																						" form-control"
+																					}
+																					type="text"
+																					name={"message"}
+																					onChange={this.handleChange}
+																					id={"message"}
+																					required={true}
+																				/>{" "}
+																			</div>
+
+																			<div className="col pr-0 align-self-end">
+																				<button
+																					disabled={this.state.loading}
+																					className="btn  float-right  btn-primary align-self-end"
+																					type="submit"
+																				>
+																					<i
+																						class={
+																							!this.state.loading
+																								? "ni ni-send"
+																								: "ni ni-settings-gear-65 spin"
+																						}
+																					></i>{" "}
+																					{!this.state.loading
+																						? "Send"
+																						: "Submitting"}
+																				</button>
+																			</div>
+																		</form>
+																	</CardBody>
+																</Card>
+															</Col>
 														</div>
-													</section>
+													</div>
 												</Col>
 											</Row>
 										</CardBody>

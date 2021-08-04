@@ -37,6 +37,276 @@ collections:
                   { label: SEO Description, name: description, widget: string },
                 ],
             }
+          - {
+              label: "Page Title",
+              name: "pagetitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image, required: false },
+                  { label: Text, name: text, widget: text, required: false },
+                ],
+            }
+          - {
+              label: Footer Sections,
+              name: "footerobjects",
+              widget: list,
+              collapsed: true,
+              fields:
+                [
+                  {
+                    label: "Call to action ",
+                    name: "footerstyle",
+                    widget: "select",
+                    options: ["Blog", "Instagram"],
+                  },
+                ],
+            }
+      - file: "src/pages/about/index.md"
+        label: "About Me"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - {
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "SEO Page Information",
+              fields:
+                [
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image, required: false },
+                  { label: Text, name: text, widget: text, required: false },
+                ],
+            }
+          - {
+              label: Footer Sections,
+              name: "footerobjects",
+              widget: list,
+              collapsed: true,
+              fields:
+                [
+                  {
+                    label: "Call to action ",
+                    name: "footerstyle",
+                    widget: "select",
+                    options: ["Blog", "Instagram"],
+                  },
+                ],
+            }
+      - file: "src/pages/thrive/index.md"
+        label: "Thrive Coaching"
+        name: "thrive"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "thrive-page",
+            }
+          - {
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "SEO Page Information",
+              fields:
+                [
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image, required: false },
+                  { label: Text, name: text, widget: text, required: false },
+                ],
+            }
+          - {
+              label: Footer Sections,
+              name: "footerobjects",
+              widget: list,
+              collapsed: true,
+              fields:
+                [
+                  {
+                    label: "Call to action ",
+                    name: "footerstyle",
+                    widget: "select",
+                    options: ["Blog", "Instagram"],
+                  },
+                ],
+            }
+      - file: "src/pages/inclusivity/index.md"
+        label: "Inclusivity"
+        name: "inclusivity"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "inclusivity-page",
+            }
+          - {
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "SEO Page Information",
+              fields:
+                [
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
+                ],
+            }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image, required: false },
+                  { label: Text, name: text, widget: text, required: false },
+                ],
+            }
+          - {
+              label: Footer Sections,
+              name: "footerobjects",
+              widget: list,
+              collapsed: true,
+              fields:
+                [
+                  {
+                    label: "Call to action ",
+                    name: "footerstyle",
+                    widget: "select",
+                    options: ["Blog", "Instagram"],
+                  },
+                ],
+            }
+      - file: "src/pages/events/index.md"
+        label: "Yoga Events"
+        name: "events"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "events-page",
+            }
+          - {
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "SEO Page Information",
+              fields:
+                [
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
+                ],
+            }
           - { label: "Body", name: "body", widget: "markdown", required: false }
           - {
               label: Sections,

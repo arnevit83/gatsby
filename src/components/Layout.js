@@ -9,8 +9,6 @@ import { withPrefix } from "gatsby";
 
 // Theme
 
-//.row-cols-2
-// Core Components
 import Header from "../components/Header.js";
 import Footer from "../components/Footer.js";
 
@@ -98,7 +96,7 @@ const TemplateWrapper = ({ children }) => {
 			<GlobalStyles />
 
 			<Header type={menutype} />
-
+			<style></style>
 			<div className="wrapper">
 				<div className="section-shaped my-0 skew-separator skew-mini">
 					<div className="page-header page-header-small header-filter ">

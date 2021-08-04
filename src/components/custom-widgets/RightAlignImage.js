@@ -1,19 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PreviewCompatibleImage from "../PreviewCompatibleImage";
-import { Row, Col } from "reactstrap";
+import { Col } from "reactstrap";
 
 class RightAlignImage extends React.Component {
 	render() {
 		return (
-			<Row>
-				<Col md="6">
-					<p>{this.props.text}</p>
-				</Col>
-				<Col md="6">
+			<>
+				<Col className="order-md-2" md="6">
 					<PreviewCompatibleImage imageInfo={this.props} />
 				</Col>
-			</Row>
+				<Col className="order-md-1" md="6">
+					<p>{this.props.text}</p>
+				</Col>
+			</>
 		);
 	}
 }
