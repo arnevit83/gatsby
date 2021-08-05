@@ -33,7 +33,6 @@ export const InclusivityPageTemplate = ({
 								<CardBody>
 									<Container>
 										{pagetitle && <TitleWidget title={pagetitle}></TitleWidget>}
-
 										{content !== "" && (
 											<PageContent className="content" content={content} />
 										)}
@@ -42,7 +41,8 @@ export const InclusivityPageTemplate = ({
 												key={inclusivity.toString()}
 												{...section}
 											></CustomWidget>
-										))}
+										))}{" "}
+										<hr />
 										{footerobjects.map((Footersection, inclusivity) => (
 											<FooterWidget
 												key={inclusivity.toString()}

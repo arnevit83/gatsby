@@ -23,25 +23,12 @@ function Footer() {
 							<h3 className="text-primary font-weight-light mb-2">
 								{footertitle}
 							</h3>
-							<h4 className="mb-0 font-weight-light">{footerdesc}</h4>
+							<h6 className="mb-0 font-weight-light">{footerdesc}</h6>
 						</Col>
 						<Col className="text-lg-center btn-wrapper" lg="6">
-							<TwitterButton></TwitterButton>
+							{/* <TwitterButton></TwitterButton>
 							<FacebookButton></FacebookButton>
-							<InstagramButton></InstagramButton>
-						</Col>
-					</Row>
-					<hr></hr>
-					<Row className="align-items-center justify-content-md-between">
-						<Col md="6">
-							<sub className="">
-								{config.copyright}&nbsp;Website created by{" "}
-								<a href="https://duncanpeach.com" target="_blank">
-									SparklingPeach
-								</a>
-							</sub>
-						</Col>
-						<Col md="6">
+							<InstagramButton></InstagramButton> */}{" "}
 							<ul className="nav justify-content-center">
 								<li className="nav-item">
 									<Link className="nav-link" to="/thrive">
@@ -67,6 +54,17 @@ function Footer() {
 									</Link>
 								</li>
 							</ul>
+						</Col>
+					</Row>
+					<hr></hr>
+					<Row className="align-items-center justify-content-md-between">
+						<Col md="6">
+							<sub className="">
+								{config.copyright}&nbsp;Website created by{" "}
+								<a href="https://duncanpeach.com" target="_blank">
+									SparklingPeach
+								</a>
+							</sub>
 						</Col>
 					</Row>
 				</Container>

@@ -42,7 +42,8 @@ export const EventsPageTemplate = ({
 												key={events.toString()}
 												{...section}
 											></CustomWidget>
-										))}
+										))}{" "}
+										<hr />
 										{footerobjects.map((Footersection, events) => (
 											<FooterWidget
 												key={events.toString()}

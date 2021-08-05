@@ -1,11 +1,12 @@
 const config = {
-	siteTitle: "Your Yoga Site", // Site title.
-	siteRssTitle: "Your Yoga Site", //RSS title.
-	siteTitleShort: "Your Yoga Site", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+	siteTitle: "Butterfly & Beyond", // Site title.
+	siteRssTitle: "Butterfly & Beyond", //RSS title.
+	siteTitleShort: "Butterfly & Beyond", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
 
-	siteDescription: "Yoga site description.", // Website description used for RSS feeds/meta description tag.
+	siteDescription:
+		"I am a coach and founder of Butterfly and Beyond. I have coached team members in the corporate sector for over 20 years, and now have a special interest in coaching to help childless women create fulfilling lives without children.", // Website description used for RSS feeds/meta description tag.
 
-	siteURL: "https://cms.sparklingpeach.co.uk/", // Domain of your website without pathPrefix.
+	siteURL: "https://butterflyandbeyond.com/", // Domain of your website without pathPrefix.
 	pathPrefix: "/", // Prefixes all links.
 
 	themeColor: "#172b4d", // Used for setting manifest and progress theme colors.
@@ -22,8 +23,8 @@ const config = {
 	copyright: "Copyright © " + new Date().getFullYear(), // Copyright string for the footer of the website and RSS feed.
 
 	//IG Footer setting
-	InstagramUserName: "avathefatcat",
-	Instagramsnapwidget: "https://snapwidget.com/embed/954693",
+	InstagramUserName: "butterfly_beyond",
+	Instagramsnapwidget: "https://snapwidget.com/embed/954738",
 };
 
 // Validate

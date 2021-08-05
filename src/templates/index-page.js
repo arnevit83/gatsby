@@ -44,6 +44,7 @@ export const IndexPageTemplate = ({
 												{...section}
 											></CustomWidget>
 										))}
+										<hr />
 										{footerobjects.map((Footersection, index) => (
 											<FooterWidget
 												key={index.toString()}

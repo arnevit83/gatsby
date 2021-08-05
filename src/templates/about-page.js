@@ -33,7 +33,6 @@ export const AboutPageTemplate = ({
 								<CardBody>
 									<Container>
 										{pagetitle && <TitleWidget title={pagetitle}></TitleWidget>}
-
 										{content !== "" && (
 											<PageContent className="content" content={content} />
 										)}
@@ -42,7 +41,8 @@ export const AboutPageTemplate = ({
 												key={about.toString()}
 												{...section}
 											></CustomWidget>
-										))}
+										))}{" "}
+										<hr />
 										{footerobjects.map((Footersection, about) => (
 											<FooterWidget
 												key={about.toString()}

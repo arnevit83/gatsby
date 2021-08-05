@@ -8,8 +8,10 @@ headerobject:
     without children.
 pagetitle: About Me
 sections: []
-footerobjects: []
+footerobjects:
+  - footerstyle: Instagram
 ---
+
 **Hello, I’m Sophia**<br><br>
 
 I am a coach and founder of Butterfly and Beyond. I have coached team members in the corporate sector for over 20 years, and now have a special interest in coaching to help childless women create fulfilling lives without children.<br>

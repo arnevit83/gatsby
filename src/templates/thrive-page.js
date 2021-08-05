@@ -33,7 +33,6 @@ export const ThrivePageTemplate = ({
 								<CardBody>
 									<Container>
 										{pagetitle && <TitleWidget title={pagetitle}></TitleWidget>}
-
 										{content !== "" && (
 											<PageContent className="content" content={content} />
 										)}
@@ -42,7 +41,8 @@ export const ThrivePageTemplate = ({
 												key={thrive.toString()}
 												{...section}
 											></CustomWidget>
-										))}
+										))}{" "}
+										<hr />
 										{footerobjects.map((Footersection, thrive) => (
 											<FooterWidget
 												key={thrive.toString()}

@@ -65,7 +65,7 @@ export default class Index extends React.Component {
 
 												<hr />
 											</div>
-											<div className="row m-3 align-items-center justify-content-md-center">
+											{/* 				<div className="row m-3 align-items-center justify-content-md-center">
 												<div className="col col-lg-2 text-center">
 													<TwitterButton></TwitterButton>
 												</div>
@@ -78,7 +78,7 @@ export default class Index extends React.Component {
 												<div className="col col-lg-2 text-center">
 													<EmailButton></EmailButton>
 												</div>
-											</div>
+											</div> */}
 										</div>
 
 										<CardBody>
