@@ -1,6 +1,11 @@
 const config = require("./src/settings/SiteConfig");
 
 module.exports = {
+	siteMetadata: {
+		title: config.siteTitle,
+		description: config.siteDescription,
+		siteURL: config.siteURL,
+	},
 	plugins: [
 		{
 			resolve: `gatsby-plugin-sitemap`,
