@@ -22,9 +22,8 @@ const config = {
 	copyright: "Copyright © " + new Date().getFullYear(), // Copyright string for the footer of the website and RSS feed.
 
 	//IG Footer setting
-	InstagramID: "14531051571",
-	InstagramUserName: "14531051571",
-	InstagramToken: "14531051571",
+	InstagramUserName: "avathefatcat",
+	Instagramsnapwidget: "https://snapwidget.com/embed/954693",
 };
 
 // Validate
