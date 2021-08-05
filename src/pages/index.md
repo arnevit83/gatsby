@@ -12,6 +12,7 @@ sections: []
 footerobjects:
   - footerstyle: Instagram
 ---
+
 Welcome to Butterfly and Beyond. <br><br>
 
 I am glad you are here. If you are childless not by choice or by circumstance, and are wondering what life holds for you now, I want to let you know that you are not alone, you are not less than, and that it is possible to live a meaningful and fulfilled life without children.<br><br>
@@ -21,3 +22,4 @@ I can’t have children and have not only come to accept a childless life, I’v
 I also work to promote [inclusivity ](/inclusivity)of childlessness within society, including within the media and the workplace, to raise awareness of the unconscious bias and narrative that may lead to childless people feeling invisible and stripped of their self-worth and role.<br><br>
 
 ![](/img/signed.png)
+<br><br>
