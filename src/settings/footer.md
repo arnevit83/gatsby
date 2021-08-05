@@ -1,7 +1,7 @@
 ---
 templateKey: footersettings
 footertitle: Welcome to Butterfly and Beyond.
-footerdesc: I am a coach and founder of Butterfly and Beyond. I have coached team members in the corporate sector for over 20 years, and now have a special interest in coaching to help childless women create fulfilling lives without children.
+footerdesc: It would be my great privilege and pleasure to use my experiences and skills to work with you, helping you not only cope with your childlessness, but create a joyous present and future.
 twitter: ""
 facebook: ""
 ig: avathefatcat

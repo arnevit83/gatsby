@@ -43,11 +43,12 @@ function Footer() {
 								</li>
 
 								<li className="nav-item">
-									<Link className="nav-link" to="/contact">
-										Contact
-									</Link>
+									{" "}
 									<Link className="nav-link" to="/about">
 										About Me
+									</Link>
+									<Link className="nav-link" to="/contact">
+										Contact
 									</Link>
 									<Link className="nav-link" to="/blog">
 										Blog

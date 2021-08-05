@@ -6,7 +6,7 @@ function Instagram() {
 	return (
 		<Row>
 			<Col>
-				<h4>@{config.InstagramUserName}</h4>
+				<h4 className="text-center">Follow me @{config.InstagramUserName}</h4>
 				<iframe
 					src={config.Instagramsnapwidget}
 					className="snapwidget-widget IG-Iframe"

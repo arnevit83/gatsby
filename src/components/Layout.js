@@ -96,7 +96,7 @@ const TemplateWrapper = ({ children }) => {
 			<GlobalStyles />
 
 			<Header type={menutype} />
-			<style></style>
+
 			<div className="wrapper">
 				<div className="section-shaped my-0 skew-separator skew-mini">
 					<div className="page-header page-header-small header-filter ">
