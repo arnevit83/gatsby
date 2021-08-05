@@ -6,12 +6,14 @@ const IndexPagePreview = ({ entry, getAsset, widgetFor }) => {
 	const data = entry.getIn(["data"]).toJS();
 	const entrySections = entry.getIn(["data", "sections"]);
 	const sections = entrySections ? entrySections.toJS() : [];
-
+	debugger;
 	if (data) {
 		return (
 			<IndexPageTemplate
 				headerobject={data.headerobject}
+				footerobjects={data.footerobjects}
 				sections={sections}
+				pagetitle={data.pagetitle}
 				content={widgetFor("body")}
 			/>
 		);
