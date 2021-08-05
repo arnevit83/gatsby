@@ -8,8 +8,7 @@ headerobject:
     without children.
 pagetitle: About Me
 sections: []
-footerobjects:
-  - footerstyle: Instagram
+footerobjects: []
 ---
 **Hello, I’m Sophia**
 
