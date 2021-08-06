@@ -8,42 +8,31 @@ headerobject:
     sense of joy and purpose.
 pagetitle: Events
 sections:
-  - text: >
-      As featured in the British Wheel of Yoga Spectrum magazine, my childless
-      yoga and wellbeing retreats offer a safe space for childless women to come
-      together to recover from the grief of childlessness and rediscover a sense
-      of joy and purpose.
+  - text: >-
+      **Weekend retreat for childless women** <br />
 
 
-      Taught entirely by childless women, and in the company of other childless women, you will be nurtured body and soul in the beautiful setting of The Abbey, Sutton Courtenay, Oxfordshire.
+      As featured in the British Wheel of Yoga Spectrum magazine, my childless yoga and wellbeing retreats offer a safe space for childless women to come together to recover from the grief of childlessness and rediscover a sense of joy and purpose.<br />
 
 
-      The next retreat is being held on 17th to 19th September 2021. The weekend of healing and rejuvenation includes:
+      Taught entirely by childless women, and in the company of other childless women, you will be nurtured body and soul in the beautiful setting of The Abbey, Sutton Courtenay, Oxfordshire.<br />
 
-      Four gentle yoga classes with me, your yoga teacher – combining pranayama (breathwork), relaxation and meditation.
 
-      Delicious vegetarian food and a talk on nutrition and self-care.
+      The next retreat is being held on **17th to 19th September 2021**. The weekend of healing and rejuvenation includes:
 
-      Nutrition and yoga practices to support you through perimenopause and beyond
+
+      * Four gentle yoga classes with me, your yoga teacher – combining pranayama (breathwork), relaxation and meditation.
+
+      * Delicious vegetarian food and a talk on nutrition and self-care.
+
+      * Nutrition and yoga practices to support you through perimenopause and beyond
+
+
+
+
+      ##### **[Click here to receive more weekend yoga retreat information.](mailto:ButterflyandBeyond@outlook.com?subject=Weekend%20yoga%20retreat%20info)**
     image: /img/services1.png
     type: Image on right - Text on left
-  - text: >-
-      1:1 Private yoga classes in Oxford, or online yoga classes (by web
-      conference - Skype or Zoom)
-
-
-          I will work with you to develop your own unique personal self-care practice, including asana, pranayama (breathwork), meditation, self-compassion and self-care techniques.
-          Prices from £50 for one to one yoga classes in Oxford. From £40 for online yoga classes.
-    image: /img/services2.png
-    type: Image on left - Text on right
-  - type: Image on right - Text on left
-    text: >-2
-       1:1 Coaching in person in Oxford, or online coaching (by web conference - Skype or Zoom), or by phone if preferred.
-
-
-          As your personal coach I will help you on your journey towards creating new meaning and purpose in your life. Whatever Plan B looks like, it will be a safe and nurturing space, holding you at its heart.
-          Prices from £50 for one to one coaching in Oxford, and for online coaching, Includes 15-minute check-in calls and email check in.
-    image: /img/services3.png
 footerobjects:
   - footerstyle: Blog
 ---
