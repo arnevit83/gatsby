@@ -66,7 +66,7 @@ sections:
       Coaching will help you regain your confidence and motivation as together we look at where you are in life, and explore different perspectives and options to help you create a new path forward. Combining coaching with my work as a yoga teacher, I create effective nurturing strategies for both mind and body. The goal is to enable you to live a rewarding life, with optimism and joy.<br /><br />
 
 
-      **What’s included**<br />
+      **What’s included**<br /><br />
 
 
       * A 6-month personalised one to one coaching programme – specifically designed for you.
@@ -82,7 +82,7 @@ sections:
       * A 10% discount will be available on weekend retreats for anyone who has completed the Thrive program.
 
 
-      <br /><br />
+      <br />
 
 
       If you would like to hear more about my journey and my work then please click on link to the podcast below.<br /><br />
