@@ -62,7 +62,10 @@ class TagRoute extends React.Component {
 															<table className="taglist">{postLinks}</table>
 															<br></br>
 															<p>
-																<Link to="/tags/">Browse all tags</Link>
+																<Link to="/tags/">
+																	Browse all tags&nbsp;&nbsp;
+																</Link>{" "}
+																<i class="fas fa-tags"></i>
 															</p>
 														</div>
 													</div>

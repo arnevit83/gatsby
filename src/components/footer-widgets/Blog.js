@@ -79,7 +79,7 @@ class Blog extends React.Component {
 						<br />
 						<br />
 						<Link className="button" to={post.fields.slug}>
-							Keep Reading →
+							Keep Reading&nbsp;&nbsp;<i class="fas fa-arrow-right"></i>
 						</Link>
 					</p>
 				</article>

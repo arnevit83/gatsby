@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Blog from "./Blog";
 import Instagram from "./Instagram";
+import Discovery from "./Discovery";
 
 class FooterWidget extends React.Component {
 	getWidgetPicker(widget) {
@@ -12,7 +13,9 @@ class FooterWidget extends React.Component {
 		if (widget.footerstyle === "Blog") {
 			return <Blog />;
 		}
-
+		if (widget.footerstyle === "Discovery") {
+			return <Discovery />;
+		}
 		return null;
 	}
 

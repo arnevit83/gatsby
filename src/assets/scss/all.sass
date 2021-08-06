@@ -131,7 +131,7 @@ a {
 			h4,
 			h5,
 			h6 {
-				color: #ddd;
+				color: #fff;
 			}
 			a:hover {
 				color: white !important;
@@ -244,12 +244,14 @@ p {
 	.overtext {
 		display: none;
 	}
+	.hidden-mobile {
+		display: none;
+	}
 }
 .taglist {
 	td {
 		padding: 3px 6px;
 		i {
-			top: 4px;
 			position: relative;
 		}
 	}
@@ -258,8 +260,11 @@ p {
 	min-height: 800px;
 }
 
-.card-invoice form {
-	padding: 40px;
+.card-invoice {
+	min-height: 800px;
+	form {
+		padding: 40px;
+	}
 }
 .footer {
 	padding: 40px;
@@ -292,4 +297,31 @@ p {
 .bg-white {
 	box-shadow: 0 4px 18px 0px rgba(0, 0, 0, 0.12),
 		0 7px 10px -5px rgba(0, 0, 0, 0.15);
+}
+.Coloured-Row-forced {
+	margin: 0 -15px;
+
+	background-color: #608fc9;
+	background-size: 200% 240%;
+	background: #608fc9;
+	background: radial-gradient(ellipse at center, #96b7e0 0, #608fc9 100%);
+	color: white;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: #fff;
+	}
+	a:hover {
+		color: #212529 !important;
+	}
+	.col {
+		padding: 80px;
+	}
+	.btn {
+		margin: 15px;
+	}
 }

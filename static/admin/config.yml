@@ -88,7 +88,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram"],
+                    options: ["Blog", "Instagram", "Discovery"],
                   },
                 ],
             }
@@ -165,7 +165,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram"],
+                    options: ["Blog", "Instagram", "Discovery"],
                   },
                 ],
             }
@@ -248,7 +248,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram"],
+                    options: ["Blog", "Instagram", "Discovery"],
                   },
                 ],
             }
@@ -325,7 +325,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram"],
+                    options: ["Blog", "Instagram", "Discovery"],
                   },
                 ],
             }
@@ -402,7 +402,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram"],
+                    options: ["Blog", "Instagram", "Discovery"],
                   },
                 ],
             }

@@ -18,18 +18,32 @@ function Footer() {
 		<>
 			<footer className="footer">
 				<Container>
-					<Row className="row-grid align-items-center mb-5">
-						<Col lg="6">
+					<Row className="row-grid mb-5">
+						<Col lg="9">
 							<h3 className="text-primary font-weight-light mb-2">
 								{footertitle}
 							</h3>
 							<h6 className="mb-0 font-weight-light">{footerdesc}</h6>
 						</Col>
-						<Col className="text-lg-center btn-wrapper" lg="6">
+						<Col className="text-lg-center btn-wrapper" lg="6"></Col>
+					</Row>
+					<hr></hr>
+					<Row className="align-items-center justify-content-md-between">
+						<Col lg="9">
+							<sub className="hidden-mobile">
+								{config.copyright}&nbsp;Website created by{" "}
+								<a href="https://duncanpeach.com" target="_blank">
+									SparklingPeach
+								</a>
+								<br />
+								<br />
+							</sub>
+						</Col>
+						<Col lg="3">
 							{/* <TwitterButton></TwitterButton>
 							<FacebookButton></FacebookButton>
 							<InstagramButton></InstagramButton> */}{" "}
-							<ul className="nav justify-content-center">
+							<ul className="nav ">
 								<li className="nav-item">
 									<Link className="nav-link" to="/thrive">
 										Thrive Coaching
@@ -55,17 +69,6 @@ function Footer() {
 									</Link>
 								</li>
 							</ul>
-						</Col>
-					</Row>
-					<hr></hr>
-					<Row className="align-items-center justify-content-md-between">
-						<Col md="6">
-							<sub className="">
-								{config.copyright}&nbsp;Website created by{" "}
-								<a href="https://duncanpeach.com" target="_blank">
-									SparklingPeach
-								</a>
-							</sub>
 						</Col>
 					</Row>
 				</Container>
