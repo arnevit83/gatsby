@@ -11,7 +11,7 @@ pagetitle: Thrive Coaching
 sections:
   - type: Image on left - Text on right
     text: >-
-      **I’ve been there and can help** <br /><br />
+      ## I’ve been there and can help <br /><br />
 
 
       Following my own experience of being childless not by choice, I’ve made it my purpose to transform other childless women’s experience of themselves as “not enough”. 
@@ -23,7 +23,7 @@ sections:
       That’s why I have created the 6 month Thrive coaching program. I have been in your shoes and I offer understanding, care and support.
     image: /img/home1.png
   - text: >-
-      **Together we can create you a joyous present and future**
+      ## Together we can create you a joyous present and future
 
 
       <br /><br />
@@ -37,8 +37,8 @@ sections:
     image: /img/home2.png
     type: Image on right - Text on left
   - type: Text only
-    text: >-
-      **More details:**<br /><br />
+    text: >
+      ## More details: <br /><br />
 
       My underpinning beliefs, which inform my coaching practice, are that we all have potential within us, and we have self-determination. I believe that culturally constructed knowledge and values can be challenged, and new meaning made – leading to a shift in outlook and actions. This way I believe transformation is possible. 
 
@@ -80,11 +80,8 @@ sections:
       * Bi-weekly check-ins by email or phone to review and discuss your progress on the journey.
 
       * A 10% discount will be available on weekend retreats for anyone who has completed the Thrive program.
-
-
-      <br />
-
-
+  - text: >-
+      
       If you would like to hear more about my journey and my work then please click on link to the podcast below.<br /><br />
 
 
@@ -111,6 +108,7 @@ sections:
 
 
       **[Click here to book a free Thrive Coaching discovery call and take the first step to creating a joyous present and future.](mailto:butterflyandbeyond@outlook.com)**
+    type: Text only
 footerobjects:
   - footerstyle: Blog
 ---
