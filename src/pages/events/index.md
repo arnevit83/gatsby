@@ -28,7 +28,7 @@ sections:
       * Nutrition and yoga practices to support you through perimenopause and beyond
 
 
-      <br /><br />
+      <br />
 
       [Click here to receive more weekend yoga retreat information.](mailto:ButterflyandBeyond@outlook.com?subject=Weekend%20yoga%20retreat%20info)
     image: /img/services1.png
