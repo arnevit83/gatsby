@@ -11,6 +11,7 @@ pagetitle: Home
 sections: []
 footerobjects:
   - footerstyle: Instagram
+  - footerstyle: Discovery
 ---
 ## Welcome to Butterfly and Beyond. <br><br>
 
