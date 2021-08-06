@@ -81,8 +81,8 @@ sections:
 
       * A 10% discount will be available on weekend retreats for anyone who has completed the Thrive program.
   - text: >-
-      
-      If you would like to hear more about my journey and my work then please click on link to the podcast below.<br /><br />
+      If you would like to hear more about my journey and my work then please
+      click on link to the podcast below.<br /><br />
 
 
       [Link to podcast in which I talk about my work](https://podcasts.apple.com/gb/podcast/over-40-involuntary-childless-how-ive-thrived-regardless/id1225884321?i=1000514844738)
