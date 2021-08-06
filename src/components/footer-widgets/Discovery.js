@@ -1,6 +1,8 @@
 import React from "react";
-import { Row, Col, Button, ButtonGroup } from "reactstrap";
+import { Row, Col } from "reactstrap";
 import { useLocation } from "@reach/router";
+import { Link } from "gatsby";
+
 // //about
 function Discovery() {
 	return (
@@ -15,14 +17,14 @@ function Discovery() {
 					<br />
 
 					{useLocation().pathname !== "/about" && (
-						<Button className="btn-round" c color="secondary">
+						<Link className="btn btn-secondary btn-round" to="/about">
 							About Me
-						</Button>
+						</Link>
 					)}
 					{useLocation().pathname !== "/events" && (
-						<Button className="btn-round" color="secondary">
+						<Link className="btn btn-secondary btn-round" to="/events">
 							Events
-						</Button>
+						</Link>
 					)}
 
 					<a
