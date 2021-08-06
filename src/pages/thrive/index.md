@@ -92,10 +92,7 @@ sections:
 
 
       <br />
-
-      **Payment options**
-
-      <br /><br />
+      **Payment options**<br /><br />
 
 
       Pay in full at the start of your journey and save 10%: 1 x £1080 (full price £1200)<br />
@@ -112,6 +109,7 @@ sections:
 footerobjects:
   - footerstyle: Blog
 ---
+
 ![Are you struggling to accept a childless life? Are you looking to find renewed meaning and purpose in a life without children? Do you want to create a fulfilling and joyful future? Would you like to feel supported and not alone on this journey?](/img/screenshot-2021-08-05-184149.png "Questions")
 
 <br /><br />

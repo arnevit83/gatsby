@@ -3,7 +3,6 @@ backend:
   repo: Meakeel/gatsby-starter-netlify-cms
   branch: master
   site_domain: cms.netlify.com
-
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -72,7 +71,12 @@ collections:
                       ],
                   },
                   { label: Image, name: image, widget: image, required: false },
-                  { label: Text, name: text, widget: text, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
                 ],
             }
           - {
@@ -144,7 +148,12 @@ collections:
                       ],
                   },
                   { label: Image, name: image, widget: image, required: false },
-                  { label: Text, name: text, widget: text, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
                 ],
             }
           - {
@@ -222,7 +231,12 @@ collections:
                       ],
                   },
                   { label: Image, name: image, widget: image, required: false },
-                  { label: Text, name: text, widget: text, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
                 ],
             }
           - {
@@ -294,7 +308,12 @@ collections:
                       ],
                   },
                   { label: Image, name: image, widget: image, required: false },
-                  { label: Text, name: text, widget: text, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
                 ],
             }
           - {
@@ -366,7 +385,12 @@ collections:
                       ],
                   },
                   { label: Image, name: image, widget: image, required: false },
-                  { label: Text, name: text, widget: text, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
                 ],
             }
           - {

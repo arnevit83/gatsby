@@ -46,6 +46,7 @@
 		"react-helmet": "^6.1.0",
 		"react-slick": "^0.28.1",
 		"reactstrap": "^8.5.1",
+		"remark-html": "^14.0.0",
 		"slick-carousel": "^1.8.1",
 		"uuid": "^7.0.0"
 	},

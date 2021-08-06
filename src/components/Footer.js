@@ -3,9 +3,9 @@ import React from "react";
 import { Link } from "gatsby";
 import GetFooterSettings from "./SiteFooterSettings";
 const config = require("../../src/settings/SiteConfig");
-import TwitterButton from "./SocialButtons/TwitterButton";
-import FacebookButton from "./SocialButtons/FacebookButton";
-import InstagramButton from "./SocialButtons/InstagramButton";
+//import TwitterButton from "./SocialButtons/TwitterButton";
+//import FacebookButton from "./SocialButtons/FacebookButton";
+//import InstagramButton from "./SocialButtons/InstagramButton";
 
 // reactstrap components
 import { Container, Row, Col } from "reactstrap";

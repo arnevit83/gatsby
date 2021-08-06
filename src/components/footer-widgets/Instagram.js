@@ -8,15 +8,19 @@ function Instagram() {
 			<Col>
 				<h4 className="text-center">Follow me @{config.InstagramUserName}</h4>
 				<iframe
+					title="IG Feed"
 					src={config.Instagramsnapwidget}
 					className="snapwidget-widget IG-Iframe"
 					allowtransparency="true"
 					scrolling="no"
 				></iframe>
 				<a
+					id="IGFeedlink"
 					href={"https://www.instagram.com/" + config.InstagramUserName}
 					className="Lockdown"
-				></a>
+				>
+					&nbsp;
+				</a>
 			</Col>
 		</Row>
 	);

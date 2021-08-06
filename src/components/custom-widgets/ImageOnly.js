@@ -8,7 +8,6 @@ class ImageOnly extends React.Component {
 		return (
 			<Col className="mx-auto">
 				<PreviewCompatibleImage imageInfo={this.props} />
-				<p className="text-center">{this.props.text}</p>
 			</Col>
 		);
 	}

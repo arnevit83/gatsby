@@ -3,14 +3,14 @@ import { navigate } from "gatsby-link";
 
 import Layout from "../../components/Layout";
 
-import InstagramButton from "../../components/SocialButtons/InstagramButton";
-import TwitterButton from "../../components/SocialButtons/TwitterButton";
-import FacebookButton from "../../components/SocialButtons/FacebookButton";
+//import InstagramButton from "../../components/SocialButtons/InstagramButton";
+//import TwitterButton from "../../components/SocialButtons/TwitterButton";
+//import FacebookButton from "../../components/SocialButtons/FacebookButton";
 
 import styles from "./index.module.css";
 
 import { Container, Row, Col, Card, CardBody } from "reactstrap";
-import EmailButton from "../../components/SocialButtons/EmailButton";
+//import EmailButton from "../../components/SocialButtons/EmailButton";
 
 const axios = require("axios");
 
