@@ -10,6 +10,7 @@ pagetitle: About Me
 sections: []
 footerobjects:
   - footerstyle: Instagram
+  - footerstyle: Discovery
 ---
 ## Hello, I’m Sophia <br><br>
 
