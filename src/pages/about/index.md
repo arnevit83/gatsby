@@ -15,9 +15,9 @@ footerobjects:
 **Hello, I’m Sophia**<br><br>
 
 I am a coach and founder of Butterfly and Beyond. I have coached team members in the corporate sector for over 20 years, and now have a special interest in coaching to help childless women create fulfilling lives without children.<br>
-
+<br><br>
 My Masters research, exploring the experience of coaching in childless women, received an award from the European Mentoring and Coaching Council, UK, for the dissertation with the highest potential for societal benefit.<br>
-
+<br><br>
 My mission is to help women who are childless not by choice, reclaim their sense of self and move from simply existing, and just about coping with being childless forever, to truly living whole and fulfilled lives. I promote inclusivity and raise awareness of the unconscious bias that marginalises, isolates and strips people of their self-worth and role within society, including within the media and the workplace.<br><br>
 
 **I believe that no one should feel alone**<br><br>
