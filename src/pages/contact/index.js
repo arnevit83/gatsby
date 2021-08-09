@@ -86,7 +86,7 @@ export default class Index extends React.Component {
 												<Col xs="12">
 													<div className="container-fluid">
 														<div className="row">
-															<Col className="mx-auto" xs="8">
+															<Col className="mx-auto" md="8">
 																<Card className="card-invoice">
 																	<CardBody>
 																		<form
