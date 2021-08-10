@@ -91,8 +91,7 @@ sections:
       [You can read my research on the experience of coaching in childless women here. ](https://radar.brookes.ac.uk/radar/items/00f8f6a9-2c25-4969-95d4-e115a9993d16/1/)
 
 
-      <br />
-      **Payment options**<br /><br />
+      <br /> **Payment options**<br /><br />
 
 
       Pay in full at the start of your journey and save 10%: 1 x £1080 (full price £1200)<br />
@@ -104,7 +103,7 @@ sections:
       <br />
 
 
-      **[Click here to book a free Thrive Coaching discovery call and take the first step to creating a joyous present and future.](mailto:butterflyandbeyond@outlook.com)**
+      **[Click here to book a free Thrive Coaching discovery call and take the first step to creating a joyous present and future.](<mailto:butterflyandbeyond@outlook.com?subject=FREE Thrive Coaching discovery call>)**
     type: Text only
 footerobjects:
   - footerstyle: Blog
