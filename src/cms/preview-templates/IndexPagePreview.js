@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { IndexPageTemplate } from "../../templates/index-page";
-import { useLocation } from "@reach/router";
+
 const IndexPagePreview = ({ entry, getAsset, widgetFor }) => {
 	const data = entry.getIn(["data"]).toJS();
 	const entrySections = entry.getIn(["data", "sections"]);
@@ -15,7 +15,6 @@ const IndexPagePreview = ({ entry, getAsset, widgetFor }) => {
 				sections={sections}
 				pagetitle={data.pagetitle}
 				content={widgetFor("body")}
-				useLocation={useLocation}
 			/>
 		);
 	} else {
