@@ -28,7 +28,11 @@ function Email() {
 						subscribe, you acknowledge that your information will be transferred
 						to Mailchimp for processing.
 						<br />
-						<a href="https://mailchimp.com/legal/" target="_blank">
+						<a
+							href="https://mailchimp.com/legal/"
+							rel="noreferrer"
+							target="_blank"
+						>
 							Learn more about Mailchimp's privacy practices here
 						</a>
 					</sub>

@@ -224,6 +224,7 @@ export default class Index extends React.Component {
 																									id="map_canvas"
 																								>
 																									<iframe
+																										title="Signupfor"
 																										allowfullscreen=""
 																										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39520.75190113159!2d-1.2826071312141902!3d51.75046423416693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48713380adc41faf%3A0xc820dba8cb547402!2sOxford!5e0!3m2!1sen!2suk!4v1561627691835!5m2!1sen!2suk"
 																										width="600"
