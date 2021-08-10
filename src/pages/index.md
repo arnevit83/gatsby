@@ -13,9 +13,11 @@ footerobjects:
   - footerstyle: Discovery
   - footerstyle: Instagram
 ---
-## Welcome to Butterfly and Beyond. <br><br>
 
 ![Welcome to Butterfly and Beyond.](/img/home0.jpg "Welcome to Butterfly and Beyond.")
+<br><br>
+
+## Welcome to Butterfly and Beyond. <br><br>
 
 I am glad you are here. If you are childless not by choice or by circumstance, and are wondering what life holds for you now, I want to let you know that you are not alone, you are not less than, and that it is possible to live a meaningful and fulfilled life without children.<br><br>
 

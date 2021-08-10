@@ -78,6 +78,6 @@ sections:
 
       > “As a childless woman, I am passionate about changing the narrative around womanhood and childlessness within a pronatalist society including the media, ensuring **[inclusivity](/inclusivity)** within the workplace, and helping women to realise how much worth and potential they hold within themselves”.
 footerobjects:
-  - footerstyle: Discovery
   - footerstyle: Instagram
+  - footerstyle: Discovery
 ---
