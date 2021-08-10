@@ -10,7 +10,7 @@ description: Asana is the term used to describe the physical postures of yoga,
   as one of the first steps on the ladder to mastery of the mind and higher
   states.
 featuredpost: true
-featuredimage: /img/default.png
+featuredimage: /img/header.jpg
 tags:
   - asana
 ---
