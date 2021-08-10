@@ -18,7 +18,7 @@ sections:
       Taught entirely by childless women, and in the company of other childless women, you will be nurtured body and soul in the beautiful setting of The Abbey, Sutton Courtenay, Oxfordshire.<br /><br />
 
 
-      The next retreat is being held on **17th to 19th September 2021**. The weekend of healing and rejuvenation includes:<br /><br />
+       In the next retreat, being held on **17th to 19th September 2021**, I will be teaming up with Nina Galley, nutritional therapist at nourishigspace.co.uk. The weekend of healing and rejuvenation includes:<br /><br />
 
 
       * Four gentle yoga classes with me, your yoga teacher – combining pranayama (breathwork), relaxation and meditation.
