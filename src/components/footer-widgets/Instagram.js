@@ -13,7 +13,9 @@ function Instagram() {
 					allowtransparency="true"
 					scrolling="no"
 				></iframe>{" "}
-				<h4 className="text-center">Follow me @{config.InstagramUserName}</h4>
+				<h4 className="text-center">
+					Follow me on Instagram @{config.InstagramUserName}
+				</h4>
 				<a
 					id="IGFeedlink"
 					href={"https://www.instagram.com/" + config.InstagramUserName}

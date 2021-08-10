@@ -16,20 +16,25 @@ function Discovery() {
 					</h4>
 					<br />
 
-					{useLocation().pathname !== "/about" && (
-						<Link className="btn btn-secondary btn-round" to="/about">
-							About Me
+					{useLocation().pathname !== "/thrive" && (
+						<Link className="btn btn-secondary btn-round" to="/thrive">
+							Thrive Coaching
 						</Link>
 					)}
+
 					{useLocation().pathname !== "/events" && (
 						<Link className="btn btn-secondary btn-round" to="/events">
 							Events
 						</Link>
 					)}
-
+					{useLocation().pathname !== "/inclusivity" && (
+						<Link className="btn btn-secondary btn-round" to="/inclusivity">
+							Inclusivity
+						</Link>
+					)}
 					<a
 						className="btn btn-secondary btn-round"
-						href="mailto:ButterflyandBeyond@outlook.com?subject=FREE yoga class consultation"
+						href="mailto:ButterflyandBeyond@outlook.com?subject=Book you free discovery call"
 						color="secondary"
 					>
 						<i class="far fa-calendar-alt "></i>&nbsp;&nbsp; Book your FREE
