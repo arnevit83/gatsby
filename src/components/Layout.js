@@ -1,11 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import { init } from "cookie-though";
 
 import GetSiteSettings from "./SiteSettings";
 import useSiteMetadata from "./SiteMetadata";
 
 import GlobalStyles from "./GlobalStyles";
 import { withPrefix } from "gatsby";
+
+import CookieConfig from "../settings/CookieConfig.json";
 
 // Theme
 
@@ -14,7 +17,7 @@ import Footer from "../components/Footer.js";
 
 const TemplateWrapper = ({ children }) => {
 	const { title, description, siteURL } = useSiteMetadata();
-
+	init(CookieConfig);
 	const {
 		fbpageid,
 		twitter,

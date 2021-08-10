@@ -15,7 +15,7 @@ import {
 	Col,
 } from "reactstrap";
 
-var config = require("../../src/settings/SiteConfig");
+//var config = require("../../src/settings/SiteConfig");
 
 function Header(props) {
 	React.useEffect(() => {
