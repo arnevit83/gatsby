@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
+
 import { Link } from "gatsby";
 
 function Email() {

@@ -6,7 +6,7 @@ headerobject:
     are childless not by choice or by circumstance, and are wondering what life
     holds for you now, I want to let you know that you are not alone, you are
     not less than, and that it is possible to live a meaningful and fulfilled
-    life without children. "
+    life without children.  "
 pagetitle: I believe in you
 sections: []
 footerobjects:
