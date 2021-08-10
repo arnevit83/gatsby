@@ -6,6 +6,10 @@ function Instagram() {
 	return (
 		<Row>
 			<Col>
+				{" "}
+				<h4 className="text-center">
+					Follow me on Instagram @{config.InstagramUserName}
+				</h4>
 				<iframe
 					title="IG Feed"
 					src={config.Instagramsnapwidget}
@@ -13,9 +17,6 @@ function Instagram() {
 					allowtransparency="true"
 					scrolling="no"
 				></iframe>{" "}
-				<h4 className="text-center">
-					Follow me on Instagram @{config.InstagramUserName}
-				</h4>
 				<a
 					id="IGFeedlink"
 					href={"https://www.instagram.com/" + config.InstagramUserName}

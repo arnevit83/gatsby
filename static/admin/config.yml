@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: Meakeel/gatsby-starter-netlify-cms
+  name: git-gateway
   branch: master
-  site_domain: cms.netlify.com
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -90,7 +88,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
@@ -167,7 +165,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
@@ -250,7 +248,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
@@ -327,7 +325,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
@@ -404,7 +402,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
@@ -481,7 +479,7 @@ collections:
                     label: "Call to action ",
                     name: "footerstyle",
                     widget: "select",
-                    options: ["Blog", "Instagram", "Discovery"],
+                    options: ["Blog", "Instagram", "Discovery", "Email"],
                   },
                 ],
             }
