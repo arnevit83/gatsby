@@ -35,5 +35,6 @@ sections:
     image: /img/services1.png
     type: Image on right - Text on left
 footerobjects:
+  - footerstyle: Email
   - footerstyle: Blog
 ---

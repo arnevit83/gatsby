@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import { useLocation } from "@reach/router";
 import { Link } from "gatsby";
 
 // //about
@@ -16,22 +15,18 @@ function Discovery() {
 					</h4>
 					<br />
 
-					{useLocation().pathname !== "/thrive" && (
-						<Link className="btn btn-secondary btn-round" to="/thrive">
-							Thrive Coaching
-						</Link>
-					)}
+					<Link className="btn btn-secondary btn-round" to="/thrive">
+						Thrive Coaching
+					</Link>
 
-					{useLocation().pathname !== "/events" && (
-						<Link className="btn btn-secondary btn-round" to="/events">
-							Events
-						</Link>
-					)}
-					{useLocation().pathname !== "/inclusivity" && (
-						<Link className="btn btn-secondary btn-round" to="/inclusivity">
-							Inclusivity
-						</Link>
-					)}
+					<Link className="btn btn-secondary btn-round" to="/events">
+						Events
+					</Link>
+
+					<Link className="btn btn-secondary btn-round" to="/inclusivity">
+						Inclusivity
+					</Link>
+
 					<a
 						className="btn btn-secondary btn-round"
 						href="mailto:ButterflyandBeyond@outlook.com?subject=Book you free discovery call"

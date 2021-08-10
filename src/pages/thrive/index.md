@@ -106,8 +106,10 @@ sections:
       **[Click here to book a free Thrive Coaching discovery call and take the first step to creating a joyous present and future.](<mailto:butterflyandbeyond@outlook.com?subject=FREE Thrive Coaching discovery call>)**
     type: Text only
 footerobjects:
+  - footerstyle: Email
   - footerstyle: Blog
 ---
+
 ![Are you struggling to accept a childless life? Are you looking to find renewed meaning and purpose in a life without children? Do you want to create a fulfilling and joyful future? Would you like to feel supported and not alone on this journey?](/img/screenshot-2021-08-10-145151.png "Questions")
 
 <br /><br />
