@@ -119,7 +119,7 @@ function Header(props) {
 									Blog
 								</Link>
 								<Link className="nav-link" to="/contact">
-									Contact
+									Connect
 								</Link>
 							</div>
 						</Nav>
