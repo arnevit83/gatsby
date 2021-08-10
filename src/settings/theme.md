@@ -2,7 +2,8 @@
 templateKey: themesettings
 fontalt: Open Sans
 font: Open Sans
-colordefault: "#885ee4"
-colorprimary: "#608fc9"
+contactemail: sopan66@hotmail.com
+colordefault: "#608fc9"
+colorprimary: "#7D00CE"
 colorsecondary: "#f4f5f7"
 ---
