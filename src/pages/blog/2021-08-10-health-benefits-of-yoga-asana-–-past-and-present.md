@@ -2,13 +2,7 @@
 templateKey: blog-post
 title: "Health benefits of yoga asana – past and present "
 date: 2021-08-10T10:48:47.592Z
-description: Asana is the term used to describe the physical postures of yoga,
-  and is probably what most people think of when they hear the term yoga. In
-  this context one of the most obvious purposes of asana is physical exercise.
-  However, in the classical texts, the purpose of asana extends beyond a form of
-  physical exercise. It appears that the classical texts on Hatha yoga see asana
-  as one of the first steps on the ladder to mastery of the mind and higher
-  states.
+description: " "
 featuredpost: true
 featuredimage: /img/header.jpg
 tags:
