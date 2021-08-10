@@ -5,5 +5,5 @@ headertransparancy: true
 headerbackgroundimage: /img/default.png
 menutype: White
 fbpageid: "0"
-location: '{"type":"Point","coordinates":[-0.0791016,51.5323269]}'
+location: '{"type":"Point","coordinates":[-1.2577114,51.7518437]}'
 ---
