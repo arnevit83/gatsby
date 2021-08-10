@@ -32,14 +32,10 @@ sections:
   - type: Image on left - Text on right
     image: /img/about2.png
     text: >-
-      **Living the life unexpected**
+      # Living the life unexpected
 
 
       By the time I reached my early 40s, I had joined a growing band of single, childless women. I had created a rewarding corporate career working in companies which develop therapies to help people with rare diseases. Unwittingly, I had let my time be consumed by my career, and I realised that my hope of meeting someone special, to settle down and have a family, was not going to happen. I tried fertility treatment on my own, and when eventually I was told that I suffered from adenomyosis and that my only option was to go abroad and use donor eggs, I decided to draw the curtains on my dream.
-
-
-
-
 
 
       **Childlessness and depression**
@@ -49,11 +45,10 @@ sections:
   - type: Image on right - Text on left
     image: /img/about3.png
     text: >-
-      **Rediscovering my love of coaching and mentoring**
+      # Rediscovering my love of coaching and mentoring
 
 
       Having been introduced to coaching in the early 2000’s, I rediscovered the joy I gained from coaching and mentoring others, and enrolled in a Masters in Coaching and Mentoring to deepen my knowledge and further my practice, during which I developed my own coaching model. Through coaching, I wanted to do for other childless women what others had done for me – help them to regain their confidence and motivation and find their path forward.
-
 
 
       Finding no existing research on using coaching for childlessness, I focused my research on the experience of coaching in childless women, which is the first research into coaching in this area.
