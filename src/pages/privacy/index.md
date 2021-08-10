@@ -7,8 +7,7 @@ pagetitle: Privacy Policy
 sections: []
 footerobjects: []
 ---
-
-1.   INTRODUCTION
+1. INTRODUCTION
 
 This privacy notice provides you with details of how we collect and process your personal data through your use of our site www.butterflyandbeyond.com.
 
@@ -16,7 +15,7 @@ By providing us with your data, you warrant to us that you are over 13 years of 
 
 Sophia Andeh is the data controller and is responsible for your personal data (referred to as “we”, “us” or “our” in this privacy notice). It is very important that the information we hold about you is accurate and up to date. Please let us know if at any time your personal information changes by emailing us at butterflyandbeyond@outlook.com.
 
-2.  WHAT DATA DO WE COLLECT ABOUT YOU, FOR WHAT PURPOSE AND ON WHAT GROUND WE PROCESS IT
+2. WHAT DATA DO WE COLLECT ABOUT YOU, FOR WHAT PURPOSE AND ON WHAT GROUND WE PROCESS IT
 
 Personal data means any information capable of identifying an individual. It does not include anonymised data.
 
@@ -47,8 +46,9 @@ Before we share your personal data with any third party for their own marketing 
 
 You can ask us or third parties to stop sending you marketing messages at any time by following the opt-out links on any marketing message sent to you.
 
-If you opt out of receiving marketing communications this opt-out does not apply to personal data provided as a result of other transactions, such as purchases, warranty registrations etc.\
-4.  DISCLOSURES OF YOUR PERSONAL DATA
+If you opt out of receiving marketing communications this opt-out does not apply to personal data provided as a result of other transactions, such as purchases, warranty registrations etc.
+
+4. DISCLOSURES OF YOUR PERSONAL DATA
 
 We may have to share your personal data with the parties set out below:
 
@@ -59,7 +59,7 @@ We may have to share your personal data with the parties set out below:
 
 We require all third parties to whom we transfer your data to respect the security of your personal data and to treat it in accordance with the law. We only allow such third parties to process your personal data for specified purposes and in accordance with our instructions.
 
-5.  INTERNATIONAL TRANSFERS
+5. INTERNATIONAL TRANSFERS
 
 Countries outside of the European Economic Area (EEA) do not always offer the same levels of protection to your personal data, so European law has prohibited transfers of personal data outside of the EEA unless the transfer meets certain criteria.
 
@@ -72,11 +72,11 @@ Whenever we transfer your personal data out of the EEA, we do our best to ensure
 •  If we use US-based providers that are part of EU-US Privacy Shield, we may transfer data to them, as they have equivalent safeguards in place.\
 If none of the above safeguards is available, we may request your explicit consent to the specific transfer. You will have the right to withdraw this consent at any time.
 
-6.  DATA SECURITY
+6. DATA SECURITY
 
 We have put in place security measures to prevent your personal data from being accidentally lost, used, altered, disclosed, or accessed without authorisation. We also allow access to your personal data only to those employees and partners who have a business need to know such data. They will only process your personal data on our instructions and they must keep it confidential.
 
-7.  DATA RETENTION
+7. DATA RETENTION
 
 We will only retain your personal data for as long as necessary to fulfil the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements.
 
@@ -86,7 +86,7 @@ For tax purposes the law requires us to keep basic information about our custome
 
 In some circumstances we may anonymise your personal data for research or statistical purposes in which case we may use this information indefinitely without further notice to you.
 
-8.  YOUR LEGAL RIGHTS
+8. YOUR LEGAL RIGHTS
 
 Under data protection laws you have rights in relation to your personal data that include the right to request access, correction, erasure, restriction, transfer, to object to processing, to portability of data and (where the lawful ground of processing is consent) to withdraw consent.
 
