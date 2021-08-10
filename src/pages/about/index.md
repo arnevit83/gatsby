@@ -10,7 +10,10 @@ pagetitle: About Me
 sections:
   - type: Image on right - Text on left
     text: >-
-      # Hello, I’m Sophia 
+      # Hello, I’m Sophia
+
+
+      #  
 
 
       I am a coach and founder of Butterfly and Beyond. I have coached team members in the corporate sector for over 20 years, and now have a special interest in coaching to help childless women create fulfilling lives without children.
@@ -35,6 +38,8 @@ sections:
       # Living the life unexpected
 
 
+
+
       By the time I reached my early 40s, I had joined a growing band of single, childless women. I had created a rewarding corporate career working in companies which develop therapies to help people with rare diseases. Unwittingly, I had let my time be consumed by my career, and I realised that my hope of meeting someone special, to settle down and have a family, was not going to happen. I tried fertility treatment on my own, and when eventually I was told that I suffered from adenomyosis and that my only option was to go abroad and use donor eggs, I decided to draw the curtains on my dream.
 
 
@@ -48,6 +53,8 @@ sections:
       # Rediscovering my love of coaching and mentoring
 
 
+
+
       Having been introduced to coaching in the early 2000’s, I rediscovered the joy I gained from coaching and mentoring others, and enrolled in a Masters in Coaching and Mentoring to deepen my knowledge and further my practice, during which I developed my own coaching model. Through coaching, I wanted to do for other childless women what others had done for me – help them to regain their confidence and motivation and find their path forward.
 
 
@@ -55,7 +62,9 @@ sections:
   - type: Image on left - Text on right
     image: /img/about4.png
     text: >-
-      **Thriving when you can’t have children**
+      # Thriving when you can’t have children
+
+
 
 
       Recognising the potential for childless women to feel their bodies had failed them, I felt it imperative that my coaching approach was holistic, and incorporated mind, body and spirit.
