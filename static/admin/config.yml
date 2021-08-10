@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: Meakeel/gatsby-starter-netlify-cms
+  name: git-gateway
   branch: master
-  site_domain: cms.netlify.com
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
