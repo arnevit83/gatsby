@@ -31,7 +31,7 @@ sections:
       <br />
 
 
-      [Click here to receive more weekend yoga retreat information](mailto:ButterflyandBeyond@outlook.com?subject=Weekend%20yoga%20retreat%20info)
+      [Click here to receive more weekend yoga retreat information.](mailto:ButterflyandBeyond@outlook.com?subject=Weekend%20yoga%20retreat%20info)
     image: /img/services1.png
     type: Image on right - Text on left
 footerobjects:
