@@ -67,6 +67,9 @@ function Footer() {
 									<Link className="nav-link" to="/blog">
 										Blog
 									</Link>
+									<Link className="nav-link" to="/privacy">
+										Privacy
+									</Link>
 								</li>
 							</ul>
 						</Col>

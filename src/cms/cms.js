@@ -28,3 +28,4 @@ CMS.registerPreviewTemplate("about", IndexPagePreview);
 CMS.registerPreviewTemplate("thrive", IndexPagePreview);
 CMS.registerPreviewTemplate("inclusivity", IndexPagePreview);
 CMS.registerPreviewTemplate("events", IndexPagePreview);
+CMS.registerPreviewTemplate("privacy", IndexPagePreview);

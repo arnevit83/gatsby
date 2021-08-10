@@ -1,9 +1,13 @@
 ---
+templateKey: privacy-page
 headerobject:
   title: Privacy Policy
   description: Privacy Policy
 pagetitle: Privacy Policy
+sections: []
+footerobjects: []
 ---
+
 1.   INTRODUCTION
 
 This privacy notice provides you with details of how we collect and process your personal data through your use of our site www.butterflyandbeyond.com.

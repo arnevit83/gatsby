@@ -61,7 +61,7 @@ function Header(props) {
 				<Container>
 					<NavbarBrand className="mr-lg-5" to="/" tag={Link}>
 						<img src={logo} alt="logo" style={{ width: "88px" }} />
-						{config.siteTitle}
+						{/* {config.siteTitle} */}
 					</NavbarBrand>
 					<button
 						className="navbar-toggler"

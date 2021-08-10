@@ -1,6 +1,8 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: Meakeel/gatsby-starter-netlify-cms
   branch: master
+  site_domain: cms.netlify.com
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
     update: "Update {{collection}} “{{slug}}”"
@@ -338,6 +340,83 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "events-page",
+            }
+          - {
+              label: "Page Header",
+              name: "headerobject",
+              widget: "object",
+              collapsed: true,
+              summary: "SEO Page Information",
+              fields:
+                [
+                  { label: SEO Title, name: title, widget: string },
+                  { label: SEO Description, name: description, widget: string },
+                ],
+            }
+          - {
+              label: "Page Title",
+              name: "pagetitle",
+              widget: "string",
+              required: false,
+            }
+          - { label: "Body", name: "body", widget: "markdown", required: false }
+          - {
+              label: Sections,
+              name: sections,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: "Section Type",
+                    name: "type",
+                    widget: "select",
+                    options:
+                      [
+                        {
+                          label: "Image on left - Text on right",
+                          value: "Image on left - Text on right",
+                        },
+                        {
+                          label: "Image on right - Text on left",
+                          value: "Image on right - Text on left",
+                        },
+                        { label: "Image only", value: "Image only" },
+                        { label: "Text only", value: "Text only" },
+                      ],
+                  },
+                  { label: Image, name: image, widget: image, required: false },
+                  {
+                    label: Text,
+                    name: text,
+                    widget: markdown,
+                    required: false,
+                  },
+                ],
+            }
+          - {
+              label: Footer Sections,
+              name: "footerobjects",
+              widget: list,
+              collapsed: true,
+              fields:
+                [
+                  {
+                    label: "Call to action ",
+                    name: "footerstyle",
+                    widget: "select",
+                    options: ["Blog", "Instagram", "Discovery"],
+                  },
+                ],
+            }
+      - file: "src/pages/privacy/index.md"
+        label: "Privacy Policy"
+        name: "privacy"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "privacy-page",
             }
           - {
               label: "Page Header",
