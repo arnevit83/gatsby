@@ -16,7 +16,11 @@ Realising that I did not want to carry on feeling that way, and that I did not w
 
 I undertook an exercise that some of the group members had already done, which was to create a 'Wanted' poster for my missing Mojo. It involved me finding a picture that represented a time when I still had my “mojo”, and to write those qualities around it that would be recognisable as my mojo if spotted! I found a picture of me as a 32-year-old in New York, I had obtained a secondment at work in the United States and I was full of hope and optimism for what the future would bring. I proceeded to write my mojo qualities around it. It brought home to me that over the course of the past couple of years I had completely lost joy for all of the things that I had enjoyed previously, I no longer held dreams for an exciting future ahead. 
 
-![](https://lh5.googleusercontent.com/Z_YXDD8g07PsIOcCYa60f5HxIy-IWjJsq_deR368F96OpWLZoPMvx1ctlUq7Z98xT4OTzRuUfMYHlmRt-BWZ8sO6pm8LEv5NXZTcQkzfaLJ-NHrKm262e3hQ4IwdkesDzrgRYZhNN3ofae92vA)
+
+
+![](/img/image1.jpg)
+
+
 
 During the mentorship program I reached the stage where I felt strong enough to want to start making some changes in my life and sought coaching to help me. This further helped me to rediscover past joys, including those that I had totally forgotten about, I was surprised at my own ability to blank out my interests. My whole world had revolved around not having a family. 
 
